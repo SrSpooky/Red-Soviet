@@ -5,7 +5,7 @@
 <b> BE COME A SOVIET, MY COMRADE, FIGHT FOR THE VODKA & BEAR </b>
 
 <h1><b>IMPORTANT</b> </h1>
-<b>you have to download the font <var> Soviet </var> </b>
+<b>you have to download and Install the font <var> Soviet </var> </b>
 
 <h2> How To Save a Theme </h2>
 <ol>

@@ -1,4 +1,4 @@
-//META{"name":"Red Soviet","description":"be a Soviet, my comrade.","author":"Sir Spooky","version":"7.12"}*//
+//META{"name":"Red Soviet","description":"be a Soviet, my comrade.","author":"Sir Spooky","version":"7.15"}*//
 
 /*ORDER ALPHABETIC*/
 
@@ -7,27 +7,28 @@
 /* A */
 
 .account{
-	box-shadow:inset 0 0 30px black;
-    border-radius: 4px;
+	box-shadow:inset 0 0 30px black !important;
+    border-radius: 4px !important;
+	animation: Pulse 3s infinite ease !important
 }
 
 .app{
     font-family:soviet,Impact !important;
-    text-shadow: 0 0 10px
+    text-shadow: 0 0 10px !important;
 }
 
 .avatar-large{
-	min-width:60px;
-    min-height:60px;
-    background-size:60px 60px;
+	min-width:60px !important;
+    min-height:60px !important;
+    background-size:60px 60px !important;
 	box-shadow:5px 5px 25px !important;
 }
 
 .avatar-large:hover{
-	min-width:70px;
-    min-height:70px;
-    background-size:70px 70px;
-    transition: .2s ease !important
+	min-width:70px !important;
+    min-height:70px !important;
+    background-size:70px 70px !important;
+    transition: .2s ease !important;
 }
 
 
@@ -40,27 +41,27 @@
 
 .channel-members{ 
     background:linear-gradient(to bottom, #000000 , #600000)!important;
-    box-shadow:inset 10px 0px 20px -10px #000000;
+    box-shadow:inset 10px 0px 20px -10px #000000 !important;
 }
 
 .channel-members:hover{ 
     background:linear-gradient(to bottom, #000000 , #e60000)!important;
-    opacity:1;
+    opacity:1 !important;
 }
 
 .channel-members-wrap{
-    min-width:70px;
-    width:70px;
-    font-family:Soviet,Impact;
+    min-width:70px !important;
+    width:70px !important;
+    font-family:Soviet,Impact !important;
     text-shadow:0 0 1px !important;
-    transition:.3s ease;
-    overflow-x:hidden;
+    transition:.3s ease !important;
+    overflow-x:hidden !important;
 }
 .channel-members-wrap:hover {
-    min-width:240px;
-    width:240px;
-    transition:.3s ease;
-    overflow-x:hidden;
+    min-width:240px !important;
+    width:240px !important;
+    transition:.3s ease !important;
+    overflow-x:hidden !important;
 }
 
 .channel-textarea-autocomplete-inner {
@@ -69,12 +70,12 @@
 }
 
 .channel-textarea-autocomplete-inner:after {
-    display:none;
+    display:none !important;
 }
 
 .channel-textarea-autocomplete-inner header {
     background:rgba(0,0,0,0.85)!important;
-    border-radius:5px 5px 0 0;
+    border-radius:5px 5px 0 0 !important;
     border:none !important;
 }
 
@@ -89,8 +90,8 @@
 }
 
 .content{ 
-    background:linear-gradient(to bottom, #000000 , #600000);
-    box-shadow:inset 10px 0px 20px -10px;
+    background:linear-gradient(to bottom, #000000 , #600000) !important;
+    box-shadow:inset 10px 0px 20px -10px !important;
 }
 
 
@@ -106,16 +107,21 @@
 
 /* E */
 
-.edit-message .avatar-large {display:none;}
-.edit-message {margin-left:-20px !important;}
+.emoji-picker .category{
+    background-color: #600000!important;
+    color: white !important;
+}
+
+.edit-message .avatar-large {display:none !important;}
+.edit-message {margin-left:-20px !important ;}
 
 .emoji:hover, .emote:hover {
-    transform: scale(1.3, 1.3);
-    transition: .1s ease;
+    transform: scale(1.3, 1.3) !important;
+    transition: .1s ease !important;
 }
 .emoji, .emote {
-    transform: scale(1, 1);
-    transition: .1s ease ;
+    transform: scale(1, 1) !important;
+    transition: .1s ease !important ;
 }
 
 
@@ -131,41 +137,41 @@
 }
 
 .friends-table-header{
-	background: black
+	background: black !important;
 }
 
 .friends-row{
 	background:linear-gradient(to left, #600000, black)!important;
-    box-shadow:0 0 10px;
-    transition: .3s ease
+    box-shadow:0 0 10px !important;
+    transition: .3s ease !important;
 }
 
 .friends-row:hover{
 	background:linear-gradient(to left, red, black) !important;
-    transition: .3s ease
+    transition: .3s ease !important;
 }
 
 .form .btn-primary {
 	background-color: #1a0000 !important;
     font-family:soviet,Impact !important;
-    color: red;
-    transition: .1s ease
+    color: red !important;
+    transition: .1s ease !important;
 }
 
 .form .btn-primary:hover{
 	text-shadow: 0px 0px 10px !important;
-    font-size:20px;
-    transition: .1s ease
+    font-size:20px !important;
+    transition: .1s ease !important;
 }
 
 .form .control-group input[type=email], 
 .form .control-group input[type=password], 
 .form .control-group input[type=text], 
 .form .control-group textarea {
-	border-radius:3px;
-    background-color:transparent;
-    color:red;
-    text-shadow: 0 0 15px
+	border-radius:3px !important;
+    background-color:transparent !important;
+    color:red !important;
+    text-shadow: 0 0 15px !important;
 }
 
 
@@ -173,35 +179,35 @@
 /* G */
 
 .game-input{
-    color: white;
-    font-family:Comic Sans MS
+    color: white !important;
+    font-family:Comic Sans MS !important;
 }
 
 .guilds-wrapper{
-    background: linear-gradient(to bottom, #000000 , #600000);
-    box-shadow: inset -10px 0px 20px -10px #000000;
-    min-width: 30px;
-    width: 30px;
-    transition: .1s ease;
+    background: linear-gradient(to bottom, #000000 , #600000) !important;
+    box-shadow: inset -10px 0px 20px -10px black !important;
+    min-width: 30px !important;
+    width: 30px !important;
+    transition: .1s ease !important;
 }
 .guilds-wrapper:hover{
-    min-width:80px;
-    width:80px;
-    transition: .1s ease;
-    background:linear-gradient(to bottom, #000000 , #e60000)
+    min-width:80px !important;
+    width:80px !important;
+    transition: .1s ease !important;
+    background:linear-gradient(to bottom, #000000 , #e60000) !important;
 }
 
 .guilds li.unread 
 .guild-inner:before,
 .guild-channels ul 
 .channel-text.unread:not(.selected):not(.channel-muted):before {
-	background:#CC0066;
+	background:#CC0066 !important;
 }
 
 .guild-header header{
     font-family:soviet,Impact !important;
-    font-size: 160% !important;
-    color:grey;
+    font-size: 160% !important !important;
+    color:grey !important;
 }
 
 .guilds-separator{
@@ -212,14 +218,10 @@
 
 /* H */
 
-.help-container,.links {display:none;}
-
-.header-toolbar button span{
-	background: transparen !important
-}
+.help-container,.links {display:none !important;}
 
 .header.header{
-	background: linear-gradient(to bottom right, black, #600000);
+	background: linear-gradient(to bottom right, black, #600000) !important;
 }
 
 
@@ -227,10 +229,10 @@
 /* M */
 
 .member {
-    transition: .1s ease;
+    transition: .1s ease !important;
 }
 .member:hover {
-    transition: .1s ease;
+    transition: .1s ease !important;
     background: transparent !important;
 }
 
@@ -240,7 +242,7 @@
 
 .messages {
 	background:linear-gradient(to top, #600000,#000000) !important;
-    box-shadow:inset 10px 0px 20px -10px #000000;
+    box-shadow:inset 10px 0px 20px -10px #000000 !important;
 }
 
 .messages .mentioned .message-text {
@@ -265,52 +267,51 @@
 
 .popout header,
 .slider-bar-fill {
-	background-color:#600000;
-	border:1px solid #600000;
+	background-color:#600000 !important;
+	border:1px solid #600000 !important;
 }
 
 .radio-inner input[type=radio]:checked+span:after{ 
-    background: red;
+    background: red !important;
 }   
 
 .spoiler span{display:none;}
 .spoiler::before {
-    font-family:adventure alphabet;
-    min-height:18px;
-    padding-top:2px;
-    border-radius:5px;
-    background:rgba(153, 51, 51,0.7);
+    font-family:Franklin Gothic Medium Cond,Gloucester MT !important;
+    min-height:18px !important;
+    padding-top:2px !important;
+    border-radius:5px !important;
+    background:rgba(153, 51, 51,0.7) !important;
 }
 
 .settings-header{
-    background: linear-gradient(to bottom, #000000 , #600000);
-    box-shadow: inset 10px 0px 20px -10px #000000
+    background: linear-gradient(to bottom, #000000 , #600000) !important;
+    box-shadow: inset 10px 0px 20px -10px black !important;
 }
 
 .settings
 .settings-inner
 .settings-panel{
-	background:linear-gradient(to bottom, #000000 , #600000);
-	color:#ff5050;
-    font-family:soviet,Impact;
-    box-shadow:inset 0px 0px 25px black;
-    text-shadow:3px 3px 15px;
-    overflow-x:hidden;
+	background:linear-gradient(to bottom, #000000 , #600000) !important;
+	color:#ff5050 !important;
+    font-family:soviet,Impact !important;
+    box-shadow:inset 0px 0px 25px black !important;
+    text-shadow:3px 3px 15px !important;
+    overflow-x:hidden !important;
 }
 
 .settings
 .settings-actions{
-	background-color:#600000;
-	border-top: 0px !important;
-    box-shadow: 0px 0px 25px;
-    border-radius: 0px 0px 10px 0px;
-    overflow-x:hidden
+	background-color:#600000 !important;
+	border-top: 0px !important !important;
+    box-shadow: 0px 0px 25px !important;
+    border-radius: 0px 0px 10px 0px !important;
 }
 
 .settings-wrapper{
-    background:linear-gradient(to top, #600000 , #000000);
-	color:white;
-    box-shadow: inset 0 0 25px black;
+    background:linear-gradient(to top, #600000 , #000000) !important;
+	color:white !important;
+    box-shadow: inset 0 0 25px black !important;
 }
 
 .scroller-wrap .scroller::-webkit-scrollbar-thumb {
@@ -330,18 +331,18 @@
 /* T */
 
 .tab-bar.TOP {border-bottom: 0px !important;}
-.tab-bar.SIDE {margin-right: -17px;}
+.tab-bar.SIDE {margin-right: -17px !important;}
 
 .tab-bar-item{
-	font-family:Soviet,Impact;
+	font-family:Soviet,Impact !important;
     font-size:120% !important;
     color:red !important;
-    transition: .1s ease;
+    transition: .1s ease !important;
 }
 .tab-bar-item:hover{
     text-shadow:0 0 10px !important;
     font-size:140% !important;
-    transition: .1s ease;
+    transition: .1s ease !important;
 }
 
 .typing{
@@ -349,37 +350,37 @@
 }
 
 .topic {
-	font-family:Comic Sans MS;
-    text-shadow:0 0 10px
+	font-family:Comic Sans MS !important;
+    text-shadow:0 0 10px !important;
 }
 
 .title-wrap {
 	border-bottom:none !important;
 	background:#000000 !important;
-    font-family:soviet,Impact ;
-    text-shadow: 0 0 10px;
+    font-family:soviet,Impact !important ;
+    text-shadow: 0 0 10px !important;
 }
 
 .tooltip {
-    font-family:Comic Sans MS;
-    text-shadow:0 0 10px;
-    background-color:#600000
+    font-family:Comic Sans MS !important;
+    text-shadow:0 0 10px !important;
+    background-color:#600000 !important;
 }
 
 .tooltip.tooltip-left:after {
-    border-right-color:#600000;
+    border-right-color:#600000 !important;
 }
 
 .tooltip.tooltip-right:after {
-    border-right-color:#600000;
+    border-right-color:#600000 !important;
 }
 
 .tooltip.tooltip-bottom:after{
-    border-bottom-color:#600000;
+    border-bottom-color:#600000 !important;
 }
 
 .tooltip.tooltip-top:after {
-    border-top-color:#600000;
+    border-top-color:#600000 !important;
 }
 
 
@@ -387,45 +388,71 @@
 /* U */
 
 .user-name{
-	font-family:soviet,Impact;
+	font-family:soviet,Impact !important;
     font-size:240% !important;
     background-color:transparent !important;
-    text-shadow:0 0 0px !important
+    text-shadow:0 0 0px !important;
 }
 
 .user-name:hover{
     text-shadow:0 0 15px !important;
     text-decoration: none !important;
-    transition: .1s ease;
+    transition: .1s ease !important;
 }
 
 .user-popout .user-popout-options .btn {
-	background-color:#600000;
-	border:1px solid #600000;
+	background-color:#600000 !important;
+	border:1px solid #600000 !important;
 }
 
 .user-popout .user-popout-options .btn:hover {
-	background-color:#600000;
-	border:1px solid #600000;
+	background-color:#600000 !important;
+	border:1px solid #600000 !important;
 }
 
 .user-settings-modal-games{
-    background:linear-gradient(to top left, red, green, blue, red);
-	color:white;
-    font-family:Comic Sans MS;
-    box-shadow:inset 0px 0px 45px;
-    border-top:0px;
-    border-radius: 10px
+    background:linear-gradient(to top left, red, green, blue, red) !important;
+	color:white !important;
+    font-family:Comic Sans MS !important;
+    box-shadow:inset 0px 0px 45px !important;
+    border-top:0px !important;
+    border-radius: 10px !important;
 }
 
 .user-settings-modal-games 
 .games-table 
 .games-row 
 .item-game 
-.last-played{color:white}
+.last-played{color:white !important}
 
 .form 
 .control-group label{
-    color:white;
-    font-size:80%
+    color:white !important;
+    font-size:80% !important;
+}
+
+
+
+/* W */
+
+.win-buttons{
+	box-shadow: white !important;
+    border-radius: 40px !important;
+    transition: .3s ease !important;
+}
+
+.win-buttons:hover{
+	transform: scale(1.2) !important;
+    transition: .3s ease !important;
+}
+
+
+
+/* ANIMATION TAG */
+
+/* Pulse */
+@-webkit-keyframes Pulse{
+    0%{box-shadow:inset 0 0 30px black;}
+    50%{box-shadow:inset 0 0 70px black;}
+    100%{box-shadow:inset 0 0 30px black;}
 }

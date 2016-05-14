@@ -16,9 +16,3 @@
   <li> Be Happy 
   <li> ???
 </ol>
-
-<h2> ChangeLog </h2>
-
-  <dl> 12/05 Add animation on the Account.
-  <dd> <img src=http://i.imgur.com/iKOmWyd.gif>
-  </dl>

@@ -16,3 +16,4 @@
   <li> Be Happy 
   <li> ???
 </ol>
+<b>NOTE:</b> the font will only work if you install it

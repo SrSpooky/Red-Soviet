@@ -1,4 +1,4 @@
-//META{"name":"Red Soviet","description":"be a Soviet, my comrade.","author":"Sir Spooky","version":"7.15"}*//
+//META{"name":"Red Soviet","description":"be a Soviet, my comrade.","author":"Sir Spooky","version":"7.20"}*//
 
 /*ORDER ALPHABETIC*/
 
@@ -30,6 +30,22 @@
     background-size:70px 70px !important;
     transition: .2s ease !important;
 }
+
+
+
+/* B */
+
+button.win-close{
+	background-color:red !important;
+    border-radius:20px !important;
+}
+
+button.win-close:hover{
+	border-radius:10px !important;
+}
+
+/* Sorry BetterDiscord :C */
+.bd-settings > div:last-child{display: none !important}
 
 
 
@@ -89,6 +105,10 @@
     border-color:red !important;
 }
 
+.checkbox .checkbox-inner+span{
+	color: #600000 !important
+}
+
 .content{ 
     background:linear-gradient(to bottom, #000000 , #600000) !important;
     box-shadow:inset 10px 0px 20px -10px !important;
@@ -103,6 +123,9 @@
     color:orange !important;
 }
 
+div.popout popout-top-right no-arrow no-shadow{
+	background:red !important;
+}
 
 
 /* E */
@@ -296,7 +319,6 @@
 	color:#ff5050 !important;
     font-family:soviet,Impact !important;
     box-shadow:inset 0px 0px 25px black !important;
-    text-shadow:3px 3px 15px !important;
     overflow-x:hidden !important;
 }
 
@@ -326,12 +348,28 @@
 
 .shortcut-recorder input[type=text] {color:white !important}
 
+.small-popout-box {background: #600000}
+.small-popout-box .btn-item {
+    color :white !important;
+    font-family:Soviet, Impact !important;
+    transition: .2s ease !important;
+}
+
+.small-popout-box .btn-item:hover {
+    color: red !important;
+    transition: .2s ease !important;
+}
+
 
 
 /* T */
 
 .tab-bar.TOP {border-bottom: 0px !important;}
 .tab-bar.SIDE {margin-right: -17px !important;}
+
+.tab-bar.SIDE .tab-bar-item:before{
+	border-left:4px solid #ff4d4d !important;
+}
 
 .tab-bar-item{
 	font-family:Soviet,Impact !important;
@@ -419,6 +457,10 @@
     border-radius: 10px !important;
 }
 
+
+
+/* MIXED */
+
 .user-settings-modal-games 
 .games-table 
 .games-row 
@@ -431,24 +473,27 @@
     font-size:80% !important;
 }
 
-
-
-/* W */
-
-.win-buttons{
-	box-shadow: white !important;
-    border-radius: 40px !important;
-    transition: .3s ease !important;
+.theme-dark 
+.messages-wrapper 
+.messages 
+.divider:not(.red) span{
+	color: red !important;
+    background: transparent !important;
+    opacity:4 !important;
 }
 
-.win-buttons:hover{
-	transform: scale(1.2) !important;
-    transition: .3s ease !important;
+.theme-dark 
+.messages-wrapper 
+.messages 
+.message-group 
+.comment 
+.markup pre code {
+	background:#1a0000 !important;
 }
 
 
 
-/* ANIMATION TAG */
+/* ANIMATION */
 
 /* Pulse */
 @-webkit-keyframes Pulse{

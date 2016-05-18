@@ -65,6 +65,11 @@ button.win-close:hover{
     opacity:1 !important;
 }
 
+.channel-members h2 {
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.24) !important;
+}
+
 .channel-members-wrap{
     min-width:70px !important;
     width:70px !important;
@@ -99,6 +104,12 @@ button.win-close:hover{
     background:rgba(255,255,255,0.1)!important;
 }
 
+.channel-textarea-inner textarea {
+    color:white !important;
+    font-family:Impact !important;
+    font-size:90% !important;
+}
+
 .checkbox
 .checkbox-inner input[type=checkbox]:checked+span{
 	background-color:red !important;
@@ -106,7 +117,7 @@ button.win-close:hover{
 }
 
 .checkbox .checkbox-inner+span{
-	color: #600000 !important
+	color: red !important
 }
 
 .content{ 
@@ -245,6 +256,14 @@ div.popout popout-top-right no-arrow no-shadow{
 
 .header.header{
 	background: linear-gradient(to bottom right, black, #600000) !important;
+}
+
+
+
+/* I */
+
+.inline{
+	font-family: Courier New !important;
 }
 
 
@@ -455,6 +474,13 @@ div.popout popout-top-right no-arrow no-shadow{
     box-shadow:inset 0px 0px 45px !important;
     border-top:0px !important;
     border-radius: 10px !important;
+}
+
+
+/* W */
+
+::-webkit-input-placeholder{
+    font-family:soviet,Impact !important;
 }
 
 

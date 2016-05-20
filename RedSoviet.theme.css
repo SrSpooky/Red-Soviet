@@ -1,4 +1,4 @@
-//META{"name":"Red Soviet","description":"be a Soviet, my comrade.","author":"Sir Spooky","version":"7.20"}*//
+//META{"name":"Red Soviet","description":"be a Soviet, my comrade.","author":"Sir Spooky","version":"7.21"}*//
 
 /*ORDER ALPHABETIC*/
 
@@ -141,11 +141,6 @@ div.popout popout-top-right no-arrow no-shadow{
 
 /* E */
 
-.emoji-picker .category{
-    background-color: #600000!important;
-    color: white !important;
-}
-
 .edit-message .avatar-large {display:none !important;}
 .edit-message {margin-left:-20px !important ;}
 
@@ -235,7 +230,20 @@ div.popout popout-top-right no-arrow no-shadow{
 .guild-inner:before,
 .guild-channels ul 
 .channel-text.unread:not(.selected):not(.channel-muted):before {
-	background:#CC0066 !important;
+	background:rgb(255, 102, 0) !important;
+}
+
+.guilds-wrapper .guilds .guild.selected:before,
+.guilds-wrapper .guilds .guild.unread:before{
+    width: 55px !important;
+    height: 55px !important;
+    margin-top: -27.6px !important;
+    margin-left: 18.3px !important;
+    border-radius:30% !important;
+}
+
+.guilds-wrapper .guilds .guild.unread:before {
+    background-color: rgb(255, 102, 0) !important;
 }
 
 .guild-header header{
@@ -344,7 +352,7 @@ div.popout popout-top-right no-arrow no-shadow{
 .settings
 .settings-actions{
 	background-color:#600000 !important;
-	border-top: 0px !important !important;
+	margin-top: -1px !important;
     box-shadow: 0px 0px 25px !important;
     border-radius: 0px 0px 10px 0px !important;
 }

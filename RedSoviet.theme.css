@@ -1,4 +1,4 @@
-//META{"name":"Red Soviet","description":"be a Soviet, my comrade.","author":"Sir Spooky","version":"7.21"}*//
+//META{"name":"Red Soviet","description":"be a Soviet, my comrade.","author":"Sir Spooky","version":"7.30"}*//
 
 /*ORDER ALPHABETIC*/
 
@@ -35,21 +35,61 @@
 
 /* B */
 
-button.win-close{
-	background-color:red !important;
-    border-radius:20px !important;
+button.win-minimize{
+	background-color: #600 !important;
+    border-radius:20px;
 }
 
-button.win-close:hover{
-	border-radius:10px !important;
+button.win-maximize{
+	background-color: #600 !important;
+    border-radius:20px;
 }
+
+button.win-close{
+	background-color:red !important;
+    border-radius:10px !important;
+}
+
 
 /* Sorry BetterDiscord :C */
 .bd-settings > div:last-child{display: none !important}
 
+#bd-customcss-detach-container{
+    padding-top: 0px !important;
+    width: 70px;
+    transition: .3s ease;
+    background-color:transparent;
+}
+
+#bd-customcss-detach-container:hover{
+	width:340px;
+    transition: .2s ease;
+    background-color: transparent;
+}
+
+html{
+	background-image:url(https://a.pomf.cat/buyjhy.jpg) !important;
+    background-repeat: no-repeat
+}
+
+#bd-customcss-detach-container #bd-customcss-detach-controls-buttons button{
+	background-color: #1a0000;
+    border-radius: 5px;
+    font-family: Soviet,Impact;
+    color: red;
+}
+
+#bd-customcss-detach-container #bd-customcss-detach-controls-buttons:hover button{
+    text-shadow: 0 0 10px;
+}
+
 
 
 /* C */
+
+.checkbox .checkbox-inner+span{
+	font-family:soviet,Impact;
+}
 
 .callout-backdrop{
 	background:transparent !important;
@@ -78,6 +118,7 @@ button.win-close:hover{
     transition:.3s ease !important;
     overflow-x:hidden !important;
 }
+
 .channel-members-wrap:hover {
     min-width:240px !important;
     width:240px !important;
@@ -125,6 +166,11 @@ button.win-close:hover{
     box-shadow:inset 10px 0px 20px -10px !important;
 }
 
+.channel.channel-text a {
+    color: orange !important;
+    opacity: .50;
+}
+
 
 
 /* D */
@@ -165,7 +211,7 @@ div.popout popout-top-right no-arrow no-shadow{
     box-shadow:inset 10px 0px 20px -10px #000000 !important;
 }
 
-.friends-table-header{
+.friends-header{
 	background: black !important;
 }
 
@@ -203,13 +249,31 @@ div.popout popout-top-right no-arrow no-shadow{
     text-shadow: 0 0 15px !important;
 }
 
+.form hr{display:none}
+
 
 
 /* G */
 
+.guilds-wrapper .guilds .friends-icon{
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-image: url(https://a.pomf.cat/rozzkh.gif) !important;
+
+}
+
 .game-input{
     color: white !important;
     font-family:Comic Sans MS !important;
+}
+
+.guild-channels .channel-text.selected:before, 
+.channel-text.selected:hover, 
+.channel-text:hover {
+    border-left: none !important;
 }
 
 .guilds-wrapper{
@@ -219,6 +283,7 @@ div.popout popout-top-right no-arrow no-shadow{
     width: 30px !important;
     transition: .1s ease !important;
 }
+
 .guilds-wrapper:hover{
     min-width:80px !important;
     width:80px !important;
@@ -226,11 +291,11 @@ div.popout popout-top-right no-arrow no-shadow{
     background:linear-gradient(to bottom, #000000 , #e60000) !important;
 }
 
-.guilds li.unread 
+.guilds.unread 
 .guild-inner:before,
-.guild-channels ul 
+.guild-channels 
 .channel-text.unread:not(.selected):not(.channel-muted):before {
-	background:rgb(255, 102, 0) !important;
+	background:#ff6600 !important;
 }
 
 .guilds-wrapper .guilds .guild.selected:before,
@@ -248,12 +313,30 @@ div.popout popout-top-right no-arrow no-shadow{
 
 .guild-header header{
     font-family:soviet,Impact !important;
-    font-size: 160% !important !important;
-    color:grey !important;
+    font-size: 160% !important;
+    color:red!important;
+    transition: .2s ease
+}
+
+.guild-header:hover header{
+	color:white !important;
+    transition: .2s ease
 }
 
 .guilds-separator{
 	display:none !important;
+}
+
+.guild-channels .channel-text.selected{
+	background: linear-gradient(to left, rgba(255,255,255,0) , black) !important;
+    box-shadow: inset 0 0 20px black;
+    transition: .2s ease !important
+}
+
+.guild-channels .channel-text:hover{
+	background: linear-gradient(to right, #0d0d0d, rgba(255,255,255,0)) !important;
+    box-shadow: inset 0 0 10px black ;
+    transition: .2s ease;
 }
 
 
@@ -352,7 +435,7 @@ div.popout popout-top-right no-arrow no-shadow{
 .settings
 .settings-actions{
 	background-color:#600000 !important;
-	margin-top: -1px !important;
+	margin-top:-1px !important;
     box-shadow: 0px 0px 25px !important;
     border-radius: 0px 0px 10px 0px !important;
 }

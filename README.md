@@ -2,7 +2,7 @@
 
 <img src=http://i.imgur.com/91I2Lpf.jpg>
 
-<b> BE COME A SOVIET, MY COMRADE, FIGHT FOR THE VODKA & BEAR </b>
+<b> Another Theme made by Soviet & maybe... Bears?</b>
 
 <h1><b>IMPORTANT</b> </h1>
 <b>you have to download and Install the font <var> Soviet </var> </b>

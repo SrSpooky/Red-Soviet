@@ -1,3 +1,5 @@
+//META{"name":"Red Soviet","description":"Another theme made only for Soviet &....Bears?","author":"Sir Spooky","version":"8.10"}*//
+
 /*ORDER ALPHABETIC*/
 
 
@@ -93,11 +95,6 @@ html{
 
 .checkbox .checkbox-inner+span{
 	font-family:soviet,Impact;
-}
-
-.channel-textarea-emoji>.sprite-item,
-.channel-textarea-emoji.popout-open .sprite-item{
-	background-image:url(https://i.imgur.com/TI4ziAG.png)!important;
 }
 
 .callout-backdrop{

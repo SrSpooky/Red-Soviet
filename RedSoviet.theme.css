@@ -13,7 +13,7 @@
 }
 
 .app{
-    font-family:soviet,Impact !important;
+    font-family:Soviet,Impact !important;
     text-shadow: 0 0 10px !important;
 }
 
@@ -217,14 +217,12 @@ div.popout popout-top-right no-arrow no-shadow{
     box-shadow:inset 10px 0px 20px -10px #000000 !important;
 }
 
-.friends-header{
-	border-bottom:none !important
+.friends-header,
+.friends-table-header{
+	border-bottom:none !important;
+    background-color:black !important;
 }
 
-.friends-table-header{
-	background:black  !important;
-    border-bottom:none !important;
-}
 
 .friends-row{
 	background:linear-gradient(to left, #600000, black)!important;
@@ -272,7 +270,7 @@ div.popout popout-top-right no-arrow no-shadow{
     background-size: 50px 50px;
     background-position: 50%;
     background-repeat: no-repeat;
-    background-image: url(https://a.pomf.cat/rozzkh.gif) !important;
+    background-image: url(https://a.pomf.cat/hcbmfx.png) !important;
 
 }
 
@@ -411,6 +409,9 @@ div.popout popout-top-right no-arrow no-shadow{
 
 .private-channels 
 .channel.selected 
+.icon-friends,
+.private-channels 
+.channel 
 .icon-friends{
     width: 30px;
     height: 30px;
@@ -418,7 +419,7 @@ div.popout popout-top-right no-arrow no-shadow{
     background-position: 50%;
     background-repeat: no-repeat;
 	background-color:#FFBF00 !important;
-    background-image:url(https://a.pomf.cat/edmzpf.png)
+    background-image:url(https://a.pomf.cat/oeazdd.png)
 }
 
 .private-channels 

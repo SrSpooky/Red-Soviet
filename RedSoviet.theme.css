@@ -1,4 +1,4 @@
-//META{"name":"Red Soviet","description":"Another theme made only for Soviet &....Bears?","author":"Sir Spooky","version":"8.10"}*//
+//META{"name":"Red Soviet","description":"Another theme made only for Soviet &....Bears?","author":"Sir Spooky","version":"8.15"}*//
 
 /*ORDER ALPHABETIC*/
 
@@ -13,7 +13,7 @@
 }
 
 .app{
-    font-family:Soviet,Impact !important;
+    font-family:'Soviet',Impact !important;
     text-shadow: 0 0 10px !important;
 }
 
@@ -75,7 +75,7 @@ html{
 #bd-customcss-detach-container #bd-customcss-detach-controls-buttons button{
 	background-color: #1a0000;
     border-radius: 5px;
-    font-family: Soviet,Impact;
+    font-family: 'Soviet',Impact;
     color: red;
 }
 
@@ -87,6 +87,26 @@ html{
 
 /* C */
 
+#clockPluginClock {
+	left: 810px !important;
+    top: 700px;
+    background: transparent;
+    font-family: 'Soviet',Impact;
+    text-shadow: 0 0 10px;
+    font-size: 30px;
+    transition: .3s ease;
+}
+
+.content{
+	background: #600000 !important;
+    box-shadow:inset 0 0 20px
+}
+
+.channel-notification-settings .content label{
+	font-family:'Soviet',Impact;
+    color: red;
+}
+
 .private-channels 
 .channel.selected 
 .channel-name:after{
@@ -94,7 +114,7 @@ html{
 }
 
 .checkbox .checkbox-inner+span{
-	font-family:soviet,Impact;
+	font-family:'Soviet',Impact;
 }
 
 .callout-backdrop{
@@ -119,7 +139,7 @@ html{
 .channel-members-wrap{
     min-width:70px !important;
     width:70px !important;
-    font-family:Soviet,Impact !important;
+    font-family:'Soviet',Impact !important;
     text-shadow:0 0 1px !important;
     transition:.3s ease !important;
     overflow-x:hidden !important;
@@ -167,11 +187,6 @@ html{
 	color: red !important
 }
 
-.content{ 
-    background:linear-gradient(to bottom, #000000 , #600000) !important;
-    box-shadow:inset 10px 0px 20px -10px !important;
-}
-
 .channel.channel-text a {
     color: orange !important;
     opacity: .50;
@@ -209,6 +224,11 @@ div.popout popout-top-right no-arrow no-shadow{
 
 /* F */
 
+@font-face{
+	font-famiy: 'Soviet';
+    src: url(https://a.pomf.cat/tiickt.TTF);
+}
+
 #friends,
 .friends-table
 .friends-table-body,
@@ -237,7 +257,7 @@ div.popout popout-top-right no-arrow no-shadow{
 
 .form .btn-primary {
 	background-color: #1a0000 !important;
-    font-family:soviet,Impact !important;
+    font-family:'Soviet',Impact !important;
     color: red !important;
     transition: .1s ease !important;
 }
@@ -263,6 +283,10 @@ div.popout popout-top-right no-arrow no-shadow{
 
 
 /* G */
+
+.guilds-wrapper .guilds .guild .badge {
+    background: linear-gradient(to top left,black,red);
+}
 
 .guilds-wrapper .guilds .friends-icon{
     width: 50px;
@@ -321,7 +345,7 @@ div.popout popout-top-right no-arrow no-shadow{
 }
 
 .guild-header header{
-    font-family:soviet,Impact !important;
+    font-family:'Soviet',Impact !important;
     font-size: 160% !important;
     color:red!important;
     transition: .2s ease
@@ -369,6 +393,10 @@ div.popout popout-top-right no-arrow no-shadow{
 
 
 /* M */
+
+.message-group .comment .markup pre code {
+    font-family: Courier
+}
 
 .member {
     transition: .1s ease !important;
@@ -467,7 +495,7 @@ div.popout popout-top-right no-arrow no-shadow{
 .settings-panel{
 	background:linear-gradient(to bottom, #000000 , #600000) !important;
 	color:#ff5050 !important;
-    font-family:soviet,Impact !important;
+    font-family:'Soviet',Impact !important;
     box-shadow:inset 0px 0px 25px black !important;
     overflow-x:hidden !important;
 }
@@ -501,7 +529,7 @@ div.popout popout-top-right no-arrow no-shadow{
 .small-popout-box {background: #600000}
 .small-popout-box .btn-item {
     color :white !important;
-    font-family:Soviet, Impact !important;
+    font-family:'Soviet', Impact !important;
     transition: .2s ease !important;
 }
 
@@ -522,7 +550,7 @@ div.popout popout-top-right no-arrow no-shadow{
 }
 
 .tab-bar-item{
-	font-family:Soviet,Impact !important;
+	font-family:'Soviet',Impact !important;
     font-size:120% !important;
     color:red !important;
     transition: .1s ease !important;
@@ -545,7 +573,7 @@ div.popout popout-top-right no-arrow no-shadow{
 .title-wrap {
 	border-bottom:none !important;
 	background:#000000 !important;
-    font-family:soviet,Impact !important ;
+    font-family:'Soviet',Impact !important ;
     text-shadow: 0 0 10px !important;
 }
 
@@ -576,7 +604,7 @@ div.popout popout-top-right no-arrow no-shadow{
 /* U */
 
 .user-name{
-	font-family:soviet,Impact !important;
+	font-family:'Soviet',Impact !important;
     font-size:240% !important;
     background-color:transparent !important;
     text-shadow:0 0 0px !important;
@@ -611,7 +639,7 @@ div.popout popout-top-right no-arrow no-shadow{
 /* W */
 
 ::-webkit-input-placeholder{
-    font-family:soviet,Impact !important;
+    font-family:'Soviet',Impact !important;
 }
 
 

@@ -1,10 +1,219 @@
-//META{"name":"Red Soviet","description":"Another theme made only for Soviet &....Bears?","author":"Sir Spooky","version":"9.0"}*//
+//META{"name":"Red Soviet","description":"Another theme made only for Soviet &....Bears?","author":"Sir Spooky","version":"9.40"}*//
 
 /*ORDER ALPHABETIC*/
 
 
 
+/* BD MINIMAL */
+
+.bd-minimal 
+.guild .guild-inner, 
+.bd-minimal .guild .guild-inner a.avatar-small, 
+.bd-minimal .guilds .friends-icon, 
+.bd-minimal .guilds-wrapper .guilds .guild{
+	width: 50px;
+    height: 50px;
+}
+
+.bd-minimal .user-name{
+	font-size: 30px !important;
+}
+
+.bd-minimal .avatar-large{
+	border-radius: 550px;   
+}
+
+.bd-minimal .theme-dark .comment{
+	border-left: none;
+    padding-left: 15px;
+}
+
+.bd-minimal .guilds-wrapper .guilds .guild,
+.bd-minimal .guilds-wrapper .guilds .guild .guild-inner,
+.bd-minimal .guilds-wrapper .guilds .guild .guild-inner .avatar-small,
+.bd-minimal .guilds-wrapper .guilds .guild .guild-inner .friends-icon {
+	min-width: 20px;
+    min-heigth: 20px;
+    
+}
+
+ 
+.bd-minimal .guilds-wrapper .guilds .guild.selected:before{
+	width: 10px;
+    heigth: 10px;
+    
+}
+
+
+.bd-minimal .guild-header header span{
+	font-size: 19px;
+    
+}
+
+.bd-minimal 
+.guilds.unread .guild-inner:before,
+.bd-minimal
+.guild-channels 
+.channel-text.unread:not(.selected):not(.channel-muted):before{
+	top: 8px;
+}
+
+.bd-minimal .guilds-wrapper .guilds .friends-online{left: -20px}
+
+.bd-minimal .channel-members .avatar-small{
+	max-width: 50px;
+    max-height: 50px;
+    background-size: cover;
+
+} 
+
+.bd-minimal .account .account-details .discriminator{
+	display: none;
+}
+
+.bd-minimal .account .btn-group{
+	padding-right: 30px !important;
+    border: none !important;
+}
+
+.bd-minimal .guild-header ul a{
+    font-size: 13px;
+    margin: none;
+    padding: none;
+}
+
+.bd-minimal .guilds-wrapper .guilds .friends-online{
+	padding-left: 15px !important;
+}
+
+.bd-minimal .channel-text a, .bd-minimal .guild-channels ul .channel-voice {
+	padding-left: 15px !important;
+}
+
+.bd-minimal .guild-channels header span{
+	display: none;
+}
+
+.bd-minimal .channels-wrap{
+	width: 55px;
+    transition: .2s ease;
+}
+
+.bd-minimal .channels-wrap:hover{
+	width: 180px;
+    transition: .2s ease;
+}
+
+.bd-minimal #voice-connection .voice-connection-status{
+	font-size: 13px;
+}
+
+.bd-minimal #voice-connection .voice-connection-status .ping{
+	background: transparent;
+    display: none;
+}
+
+.bd-minimal 
+.channel-members 
+.member 
+.member-activity,
+.bd-minimal
+.channel-members 
+.member 
+.member-username-inner{
+    padding-left: 10px;
+    margin-right: 15px !important;
+}
+
+.bd-minimal .channel-members .avatar-small{
+	left: 15px !important;
+}
+
+.bd-minimal div.scroller.messages {
+    background: transparent;
+}
+
+.bd-minimal div.message-group {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 15px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+
+
+/* COMPACT MODE */
+
+.theme-dark 
+.friends-table 
+.messages 
+.message-group.compact 
+.timestamp, 
+.theme-dark 
+.messages-wrapper 
+.messages 
+.message-group.compact 
+.timestamp{
+    font-family: courier;
+    font-size: 18px;
+}
+
+.message-group.compact 
+.message 
+.markup 
+.message-content{font-family: courier;}
+
+.theme-dark 
+.friends-table 
+.messages 
+.message-group.compact 
+.user-name,
+.theme-dark 
+.messages-wrapper 
+.messages 
+.message-group.compact 
+.user-name:before{content: ">" !important;}
+
+.theme-dark 
+.friends-table 
+.messages 
+.message-group.compact 
+.user-name,
+.theme-dark 
+.messages-wrapper 
+.messages 
+.message-group.compact 
+.user-name{
+	font-size: 25px !important;
+    font-family: Consolas !important;
+}
+
+.theme-dark 
+.friends-table 
+.messages 
+.message-group.compact 
+.user-name,
+.theme-dark 
+.messages-wrapper 
+.messages 
+.message-group.compact 
+.user-name:after{content: ": " ;}
+
+
+
 /* A */
+
+.avatar-uploader .avatar-uploader-inner{
+	border:none;
+    border-radius: 25px;
+    background: ;
+    background-size: cover;
+}
+
+.account .btn-group{
+	border: none !important;
+}
 
 .account .status{
 	background: black
@@ -52,6 +261,8 @@
 .app{
     font-family:Soviet !important;
     text-shadow: 0 0 10px !important;
+    overflow-x: hidden !important;
+    overflow: hidden !important;
 }
 
 .avatar-large{
@@ -59,10 +270,13 @@
     min-height:60px !important;
     background-size:60px 60px !important;
 	box-shadow:5px 5px 25px !important;
+    transition: .3s ease !important;
 }
 
 .avatar-large:hover {
-    transform: scale(1);
+    min-width: 70px !important;
+    min-height: 70px !important;
+    background-size: 70px 70px !important;
     opacity: 1 !important;
     border-radius: 10px;
     transition: .3s ease !important;
@@ -181,9 +395,44 @@ html{
     text-shadow: 0 0 10px;
 }
 
+#bd-show-channels{
+	font-family: Soviet;
+    background:transparent ;
+    top: 110px;
+    left: 1px;
+    font-size: 30px;
+    color: white;
+    width: 20px;
+    height: 30px;
+    border-radius: 5px;
+}
+
 
 
 /* C */
+
+.channel-members-wrap .channel-members:after h2{
+	display: none;
+}
+
+.channel-members .member .member-username,
+.channel-members .member .member-activity,
+.channel-members .invite-btn{display:none}
+
+.channel-members-wrap:hover .channel-members .member .member-username,
+.channel-members-wrap:hover .channel-members .member .member-activity,
+.channel-members-wrap:hover .channel-members .invite-btn{display:block}
+
+
+.CodeMirror pre{
+    font-family: consolas;
+    font-size: 12px;
+}
+
+.channel-members .member.popout-open{
+    background: rgba(0,0,0,0.5) !important;
+    border-radius: 5px;
+}
 
 .channel-members 
 .member 
@@ -284,7 +533,7 @@ html{
 	background:transparent !important;
 }
 
-.channel-members{ 
+.channel-members{
     background:linear-gradient(to bottom, #000000 , #600000)!important;
     box-shadow:inset 10px 0px 20px -10px #000000 !important;
 }
@@ -292,6 +541,7 @@ html{
 .channel-members:hover{ 
     background:linear-gradient(to bottom, #000000 , #e00606)!important;
     opacity:1 !important;
+    
 }
 
 .channel-members h2 {
@@ -299,19 +549,21 @@ html{
     background-color: rgba(0, 0, 0, 0.24) !important;
 }
 
+
+
 .channel-members-wrap{
     min-width:70px !important;
     width:70px !important;
     font-family:Soviet,Impact !important;
     text-shadow:0 0 1px !important;
-    transition:.3s ease !important;
+    transition:all 300ms ease !important;
     overflow-x:hidden !important;
 }
 
 .channel-members-wrap:hover {
     min-width:240px !important;
     width:240px !important;
-    transition:.3s ease !important;
+    transition:all 300ms ease !important;
     overflow-x:hidden !important;
 }
 
@@ -360,6 +612,17 @@ html{
 
 /* D */
 
+div.scroller.messages {
+    background: transparent;
+}
+
+div.message-group {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 15px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
 .divider-red>span {
 	background-color:transparent !important;
     color:orange !important;
@@ -376,12 +639,12 @@ div.popout popout-top-right no-arrow no-shadow{
 .edit-message {margin-left:-20px !important ;}
 
 .emoji:hover, .emote:hover {
-    transform: scale(1.3, 1.3) !important;
-    transition: .1s ease !important;
+    transform: scale(9) !important;
+    transition: 6s ease !important;
 }
 .emoji, .emote {
     transform: scale(1, 1) !important;
-    transition: .1s ease !important ;
+    transition: 6s ease !important ;
 }
 
 
@@ -453,6 +716,17 @@ div.popout popout-top-right no-arrow no-shadow{
 
 
 /* G */
+
+.guilds-wrapper .guilds .friends-online{
+    color: white;
+    font-size: 15px;
+    font-family: ;
+    background: orange !important;
+    border-radius: 4px;
+}
+
+.guilds-wrapper .guild-separator:after { display: none;}
+
 
 .guilds-wrapper .guilds .guild .badge {
     background: linear-gradient(to top left,black,red);
@@ -559,15 +833,20 @@ div.popout popout-top-right no-arrow no-shadow{
 
 /* H */
 
+.header-toolbar button span{
+	background-color: orange;
+    border-radius: 5px
+}
+
 .help-container,.links {display:none !important;}
 
-.header.header{
-	background: linear-gradient(to bottom right, black, #600000) !important;
-}
+.header.header{background: linear-gradient(to bottom , black, #600000) !important;}
 
 
 
 /* I */
+
+.image{border-radius: 5px;}
 
 .inline{
 	font-family: Courier New !important;
@@ -582,6 +861,15 @@ div.popout popout-top-right no-arrow no-shadow{
 
 
 /* M */
+
+.message-group .comment .markup{
+	box-shadow: 0 0 5px black;
+    padding: 5px;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.5);
+    text-shadow: 0 0 3px black;
+}
+
 
 .message-group .comment .markup pre code {
     font-family: Courier
@@ -803,11 +1091,61 @@ div.popout popout-top-right no-arrow no-shadow{
 
 /* U */
 
+#user-profile-modal .avatar-profile,
+.user-popout .avatar-wrapper .avatar-popout{
+	border:none;
+    background-color:none;
+}
+
+#user-profile-modal .btn{
+	background: #1a0000;
+    color: red;
+    font-family: Soviet;
+    transition: .2s ease;
+}
+
+#user-profile-modal .btn:hover{
+	background: #1a0000;
+    font-size: 20px;
+    text-shadow: 0 0 5px;
+    transition: .2s ease;
+}
+
+#user-profile-modal .guilds .avatar-large{
+	color: transparent;
+}
+
+#user-profile-modal .guilds .guild{
+	color: white;
+    transition: 2s ease
+}
+
+#user-profile-modal .guilds .guild:hover{
+	background: rgba(255,0,0,0.3);
+    box-shadow: 0 0 10px black;
+    color: white;
+    text-shadow: 0 0 7px;
+    transition: 2s ease
+}
+
+#user-profile-modal .tab-bar{
+	background: #600;
+}
+
+#user-profile-modal .sub-header{
+	background: #600;
+}
+
+
+#user-profile-modal .scroller{
+	background: linear-gradient( to top , black , #600);
+} 
+
 .user-name{
 	font-family:soviet,Impact !important;
     font-size:240% !important;
     background-color:transparent !important;
-    text-shadow:0 0 0px !important;
+    text-shadow:0 0 9px black !important;
 }
 
 .user-name:hover{
@@ -902,6 +1240,10 @@ div.popout popout-top-right no-arrow no-shadow{
 
 /* V */
 
+#voice-connection .btn-group{
+	border: none !important;
+}
+
 #voice-connection .btn-info:after{
 	background-image: url(https://a.pomf.cat/tynweb.jpg);
     background-size: cover;
@@ -933,6 +1275,18 @@ div.popout popout-top-right no-arrow no-shadow{
 
 
 /* MIXED */
+
+.theme-dark 
+.friends-table 
+.messages 
+.message-group a, 
+.theme-dark 
+.messages-wrapper 
+.messages 
+.message-group a {
+    animation: Rainbow .5s ease infinite;
+    font-family: courier;
+}
 
 .user-settings-modal-games 
 .games-table 
@@ -988,7 +1342,6 @@ div.popout popout-top-right no-arrow no-shadow{
 }
 
 /* RAINBOW */
-
 @-webkit-keyframes Rainbow {
 	0% {color: #ff0000;}
 	10% {color:  #ff8000;}

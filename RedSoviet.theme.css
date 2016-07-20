@@ -1,30 +1,44 @@
-/*TEST INPUT*/
+//META{"name":"Red Soviet","description":"Another theme made only for Soviet &....Bears?","author":"Sir Spooky","version":"20.0"}*//
 
-#bd-customcss-detach-controls{
-	border-radius: 1px !important;
-}
-
-.CodeMirror-linenumber{
-	box-shadow: inset 0 0 1px grey;
-    text-align: center
-}
-
-.server-icon{
-    border-radius: 50px;
-    transition: .3s ease-in-out;
-}
-
-.server-icon:hover{
-	border-radius: 10px;
-    width: 70px;
-    height: 70px;
-    background-size: cover;
-    transition: .3s ease-in-out;
-}
+/*ORDER ALPHABETIC*/
 
 
 
 /* A */
+
+.add-friend-popout { background: transparent !important; }
+
+#autocomplete-popout .row:hover,
+#autocomplete-popout .row.selected{
+    background:rgba(255,255,255,0.1);
+    border-radius: 5px;
+}
+
+#autocomplete-popout section,
+#autocomplete-popout header{
+    background: rgba(0,0,0,0.9) !important;
+    font-family: Soviet,Impact !important;
+    color: white !important;
+    text-shadow: 0 0 2px black !important;
+}
+
+.account .avatar-small {
+    width: 50px !important;
+    height: 50px !important;
+    background-size: cover !important;
+    border-radius: 5px;
+}
+
+.account .account-details .discriminator{
+    background: rgba(0,0,0,.9) !important;
+    color: white !important;
+    opacity: 1 !important;
+    left: 10px !important;
+    font-size: 130% !important;
+    border-radius: 5px !important;
+}
+
+.account .account-details .username{display: none !important;}
 
 .action-buttons .jump-button.loading{
     background: #1a0000 !important;
@@ -49,13 +63,13 @@
 
 .account .btn-mute:hover:after,
 .account .btn-mute:after{
-    background-image: url(https://a.pomf.cat/tvdebc.jpg);
+    background-image: url(https://i.imgur.com/Z4lrClk.jpg);
     background-size: cover;
 }
 .account .btn-mute.disabled:after,
 .account .btn-mute.disabled:hover:after{
     opacity: 0.9;
-    background-image: url(https://a.pomf.cat/ewcupm.jpg);
+    background-image: url(https://i.imgur.com/Gp1kAof.jpg);
     background-size: cover;
 }
 
@@ -64,26 +78,25 @@
 .account .btn:hover{opacity: 0.8}
 
 .account .btn-settings:after{
-	background-image: url(https://a.pomf.cat/pkzjwd.png);
+	background-image: url(https://i.imgur.com/PhCMXze.png);
     background-size:cover;
     opacity: 1;
 }
 
 .account .btn-deafen.disabled:hover:after,
 .account .btn-deafen.disabled:after{
-	background-image: url(https://a.pomf.cat/ckuler.jpg);
+	background-image: url(https://i.imgur.com/mkGHZER.jpg);
     background-size: cover;
 }
 .account .btn-deafen:hover:after,
 .account .btn-deafen:after{
-	background-image: url(https://a.pomf.cat/yslnjh.jpg);
+	background-image: url(https://i.imgur.com/euwJeOU.jpg);
     background-size: cover;
 }
 
 .account{
-	box-shadow:inset 0 0 30px black !important;
-    border-radius: 4px !important;
-	animation: Pulse 3s infinite ease !important;
+    border: none;
+    background: transparent;
 }
 
 .app{
@@ -91,13 +104,14 @@
     text-shadow: 0 0 10px !important;
     overflow-x: hidden !important;
     overflow: hidden !important;
+    background: rgba(0,0,0,0.1) !important;
 }
 
 .avatar-large{
 	min-width:60px !important;
     min-height:60px !important;
     background-size:60px 60px !important;
-	box-shadow:5px 5px 25px !important;
+	box-shadow:5px 5px 25px black !important;
     transition: .3s ease !important;
 }
 
@@ -125,9 +139,37 @@
 
 /* B */
 
+#bd-customcss-detach-controls{border-radius: 1px !important;}
+
+.bda-slist .bda-name {
+	color: red !important;
+    font-size: 130% !important;
+    text-shadow: 0 0 5px black !important;
+}
+
+.bda-slist .bda-description {
+	color: white !important;
+    border-top: 1px dashed red !important;
+}
+
+.bda-slist li:hover {
+	background: rgba(190,0,0,0.5) !important;
+    transition: .3s ease-in-out !important;
+    box-shadow: 0 0 5px black !important;
+}
+
+.bda-slist li {
+	background: rgba(96,0,0,0.5) !important;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow:inset 0 0 10px black !important;
+    color: white !important;
+    transition: .3s ease-in-out !important;
+}
+
 .btn-confirm.active .icon-logout, .btn-confirm:hover .icon-logout,
 .btn-confirm .icon.icon-logout{
-	background-image: url(https://a.pomf.cat/oweepe.png);
+	background-image: url(https://i.imgur.com/me3nXKI.png);
     background-size: cover;
     background-color: rgba(0,0,0,0.4);
     border-radius: 19px;
@@ -171,7 +213,7 @@
 	content:" ☪ ";
     background-size: cover;
     font-size: 25px;
-    background: #EA4682;
+    background: rgba(96,0,0,0.9);
     border-radius:5px;    
 }
 
@@ -201,10 +243,9 @@
 }
 
 #bd-customcss-attach-controls{
-    background: #7C2020 !important;
+    background: #600 !important;
     border: none;
     box-shadow:inset 0 4px 8px 0 black;
-    border-radius:1px 1px 9px 9px;
 }
 
 .bda-dark .server-info button{
@@ -267,9 +308,98 @@ button.win-close{
 
 /* C */
 
-.chat .new-messages-bar button{
+.CodeMirror-linenumber{
+	box-shadow: inset 0 0 1px grey;
+    text-align: center
+}
+
+.chat form{
+	margin: 0px;
+    background-color: rgba(0,0,0,0.3) !important;
+    background-image:url(https://i.imgur.com/dCrFBih.jpg)  !important;
+    box-shadow:inset 10px 0px 20px -10px black !important;
+    background-position: top !important;
+    background-size: cover
+}
+
+.channel-textarea-inner{
+    background:none !important;
+    border: none;
+    font-family: Consolas;
+}
+
+.channel-textarea-inner textarea{
+	border: none !important;
+    background:transparent  !important;
+    text-align: center !important;
+    font-family: Consolas !important;
+    color: white;
+}
+
+.channels-wrap{
+	background-image: url(https://i.imgur.com/A43LQuw.jpg) !important;
+    background-size: cover !important;
+    background-position: -690px !important;
+}
+
+.confirm-message-modal .form-inner{background: rgba(0,0,0,0.9) !important;}
+
+.chat 
+.new-messages-bar button:last-child{color: white !important}
+
+.chat .new-messages-bar:hover { background: #600 !important; }
+
+.chat .divider.divider-red>div { background: transparent !important; }
+
+.chat .divider {
+	background: rgba(190,0,50,0.9) !important;
+    border-radius: 1px;
+}
+
+.context-menu { background: rgba(0,0,0,0.9) !important; }
+
+.context-menu .item,
+.context-menu .item:hover { background: transparent !important; }
+
+.change-log-button-container .change-log-button{
+	color: orange !important;
+    font-family: Soviet,Impact !important;
+    font-size: 110% !important;
+}
+
+.change-log-button-container .change-log-button:hover{
+    transition: .3s ease-in-out !important;
+    text-shadow: 0 0 10px !important;
+}
+
+.change-log .changelog-in-progress:after {
+	content: " (Coming Soon)" !important;
+    font-family:Copperplate Gothic !important;
+}
+
+.change-log .changelog-added, .change-log .changelog-added-secondary:after {
+	content: " (New Stuff)" !important;
+    font-family:Copperplate Gothic !important;
+}
+
+.change-log .changelog-fixed:after {
+	content: " (Fixed)" !important;
+    font-family:Copperplate Gothic !important; 
+}
+
+.change-log .changelog-fixed,
+.change-log .changelog-added, 
+.change-log .changelog-added-secondary,
+.change-log .changelog-in-progress { text-shadow: 0 0 2px black !important;}
+
+.create-guild-container .action { background: rgba(0,0,0,0.5) !important; }
+
+.create-guild-container { background: transparent !important; }
+
+.chat .new-messages-bar{
 	background-color:#BF3F3F;
     color: white;
+    border-radius:0px 0px 10px 10px;
 }
 
 .chat .jump-to-present-bar .spinner .spinner-item {
@@ -361,19 +491,19 @@ button.win-close{
 
 
 #clockPluginClock {
-	left: 810px !important;
+	left: 530px !important;
     top: 700px;
     background: transparent;
     font-family: Soviet;
     text-shadow: 0 0 10px;
     font-size: 30px;
-    transition: .3s ease;
+    position: center; 
 }
 
 .content{
-	background: #600000 !important;
-    box-shadow:inset 0 0 20px;
+	background:transparent !important;
     padding: 0px;
+    color: white !important;
 }
 
 
@@ -382,11 +512,6 @@ button.win-close{
     color: red;
 }
 
-.private-channels 
-.channel.selected 
-.channel-name:after{
-	content:" (Your Comrade)";
-}
 
 .checkbox .checkbox-inner+span{
 	font-family:soviet,Impact;
@@ -403,22 +528,19 @@ button.win-close{
 }
 
 .channel-members{
-    background:linear-gradient(to bottom, #000000 , #600000)!important;
+    background-image:url(https://i.imgur.com/CFNcLbr.jpg) !important;
     box-shadow:inset 10px 0px 20px -10px #000000 !important;
+    background-size: cover;
 }
 
 .channel-members:hover{ 
-    background:linear-gradient(to bottom, #000000 , #e00606)!important;
     opacity:1 !important;
-    
 }
 
 .channel-members h2 {
     color: white !important;
     background-color: rgba(0, 0, 0, 0.15) !important;
 }
-
-
 
 .channel-members-wrap{
     min-width:70px !important;
@@ -455,11 +577,6 @@ button.win-close{
     background:rgba(255,255,255,0.1)!important;
 }
 
-.channel-textarea-inner textarea {
-    color:white !important;
-    font-family:Impact !important;
-    font-size:90% !important;
-}
 
 .checkbox
 .checkbox-inner input[type=checkbox]:checked+span{
@@ -473,8 +590,9 @@ button.win-close{
 
 
 .channel.channel-text a {
-    color: orange !important;
-    opacity: .50;
+    color: red !important;
+    opacity: .0;
+    text-shadow: 0 0 5px black !important;
 }
 
 
@@ -504,12 +622,22 @@ div.popout popout-top-right no-arrow no-shadow{
 
 /* E */
 
+.emote{cursor: pointer;}
+
+.embed .embed-video-actions:hover{background: rgba(0,0,0,0.5);}
+
+.embed .embed-video-actions{
+    background: transparent;
+    border-radius: 5px;
+    transition: .3s ease-in-out !important;
+}
+
 .embed .embed-video-actions .embed-video-popout{
 	display: none;
 }
 
 .embed .embed-video-actions .embed-video-play:hover{
-	background-image: url(https://a.pomf.cat/lklwil.png);
+	background-image: url(https://i.imgur.com/kZoRluf.png);
     width: 50px;
     height: 50px;
     background-size: 50px 50px;
@@ -518,7 +646,7 @@ div.popout popout-top-right no-arrow no-shadow{
 }
 
 .embed .embed-video-actions .embed-video-play{
-	background-image: url(https://a.pomf.cat/zpbaem.png);
+	background-image: url(https://i.imgur.com/WxdBVpJ.png);
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
@@ -528,18 +656,11 @@ div.popout popout-top-right no-arrow no-shadow{
 }
 
 .embed .embed-video-actions 
-.embed-video-actions-inner:hover{
-    border-radius: 5px;
-    transition: .5s ease;
-}
-
-.embed .embed-video-actions 
 .embed-video-actions-inner{
-	border-radius: 70px;
+	border-radius: 100%;
     border: none;
     background:rgba(0,0,0,0.7);
     transition: .5s ease;
-    
 }
 
 
@@ -559,6 +680,63 @@ div.popout popout-top-right no-arrow no-shadow{
 
 /* F */
 
+.form header{color: red}
+
+.form .form-header{
+    background: rgba(0,0,0,0.9);
+    border-bottom: none !important;
+}
+
+.form .form-actions{
+    background: rgba(0,0,0,0.9);
+    border-top: none !important;
+}
+
+.form .form-inner{background: rgba(0,0,0,0.9) !important;}
+
+.form .btn-default:hover{text-decoration: underline !important;}
+
+.form .btn-default{
+    background: transparent !important;
+	font-family: Consolas !important;
+    color: orange !important;
+    border-bottom: none !important;
+}
+
+#friends .btn:hover{ background: red !important; }
+
+#friends .btn {
+	background: white;
+    color: #600 !important
+}
+
+#friends 
+.friends-table 
+.friends-table-header { display: none; }
+
+#friends 
+.friends-empty.section-pending 
+.empty-state-image {
+    background-image: url(/assets/8b2623dcfd6bbf07e6a6b8f8402cd21f.png) !important;
+}
+
+#friends .friends-empty p{
+    color: white !important;
+    text-shadow: 0 0 2px black !important;
+}
+
+#friends 
+.friends-empty.section-blocked 
+.empty-state-image {
+    background-image: url(/assets/fed3c2dcbbb79837d568cb8d648c86d6.png) !important;
+}
+
+.form .radio-group .radio{
+	font-family: Soviet,Impact !important;
+    color: white !important;
+    text-shadow: 0 0 2px black !important;
+}
+
 .form .control-groups+.control-group, .form .control-groups+.control-groups{
 	margin-top:0px !important;
 }
@@ -569,7 +747,7 @@ div.popout popout-top-right no-arrow no-shadow{
 }
 
 .fav{
-	background-image: url(https://a.pomf.cat/xgncnu.png);
+	background-image: url(https://i.imgur.com/sB9x1yC.png);
     background-size:cover;
     top:20px
 }
@@ -578,25 +756,27 @@ div.popout popout-top-right no-arrow no-shadow{
 .friends-table
 .friends-table-body,
 .messages-wrapper {
-    background:linear-gradient(to bottom, #000000 , #600000) !important;
+    background-image:url(https://i.imgur.com/03MXtQp.jpg) !important;
     box-shadow:inset 10px 0px 20px -10px #000000 !important;
+    background-size:cover !important;
+    background-position: center !important
 }
 
 .friends-header,
 .friends-table-header{
 	border-bottom:none !important;
-    background-color:black !important;
+    background:transparent !important;
 }
 
 
 .friends-row{
-	background:linear-gradient(to left, #600000, black)!important;
+	background:linear-gradient(to left, rgba(96,0,0,0.9), rgba(0,0,0,0.9))!important;
     box-shadow:0 0 10px !important;
     transition: .3s ease !important;
 }
 
 .friends-row:hover{
-	background:linear-gradient(to left, red, black) !important;
+	background:linear-gradient(to left, rgba(255,0,0,0.9), rgba(96,0,0,0.9)) !important;
     transition: .3s ease !important;
 }
 
@@ -628,6 +808,134 @@ div.popout popout-top-right no-arrow no-shadow{
 
 
 /* G */
+
+.guild-channels{
+    background: transparent !important;
+    border-top: none !important;
+}
+
+.guild-header ul{
+    color:transparent !important;
+    background: transparent !important;
+    transform: rotateY(90deg) !important;
+    transition: .3s ease-in-out !important;
+}
+
+.guild-header.guild-header-open ul{
+    background: rgba(0,0,0,0.9) !important;
+    transform: rotateY(0deg) !important
+}
+
+.guild-settings-modal-members 
+.guild-settings-modal-list 
+.member+.member{ border-top: none !important; }
+
+.guild-settings-modal-members{ background: transparent !important; }
+
+.guild-settings-modal-members 
+.guild-settings-modal-list 
+.member .bot-tag:after{
+    content: "☪";
+    background: transparent;
+    font-size: 15px;
+    color: red;
+}
+
+.guild-channels .channel-voice a{
+    color: red !important;
+    opacity: 1;
+    text-shadow: 0 0 2px black !important;
+    background: rgba(0,0,0,0.9) !important;
+    border-radius: 5px;
+    text-align: center !important;
+}
+
+.guild-channels .channel-voice:hover a{
+    color: red !important;
+    background: rgba(96,0,0,0.9) !important;
+}
+
+
+.guild-channels .channel .channel-name:before{
+    color: red !important;
+    text-shadow: 0 0 2px black;
+}
+
+.guild-channels 
+.channel-voice-states li span:hover{
+	background: rgba(96,0,0,0.9) !important;
+    color: red !important;
+}
+
+.guild-channels 
+.channel-voice-states li span {
+    text-shadow: 0 0 2px black !important;
+    background: rgba(0,0,0,0.9);
+    color: white !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+}
+
+.guild-channels .channel-user-limit:hover { display: block !Important; }
+
+.guild-channels .channel-user-limit {
+    background: rgba(0,0,0,0.9);
+    text-shadow: 0 2px black !important;
+    color: red !important
+}
+
+.guild-channels 
+.channel-voice-states li .avatar-small {
+	width: 30px !important;
+    height: 30px !important;
+    background-size: cover;
+    
+}
+
+.guild-channels 
+.channel-voice-states {
+    margin-top: 0px;
+    font-size: 12px;
+    padding-left: 0px !important;
+}
+
+.guild-settings-modal-members 
+.guild-settings-modal-list 
+.member .member-username{
+    font-family: Soviet;
+    opacity: 1;
+    font-size: 20px;
+    color: white;
+}
+
+guild-settings-modal-members .member-buttons .btn.btn-danger{
+	background: rgba(255,0,0,0.8) !important;
+    color: #600 !important
+}
+
+.guild-settings-modal-members .member-buttons .btn.btn-danger:hover{
+	text-shadow:0 0 2px #600 !importnat
+}
+
+.guild-settings-modal-members .member-buttons .btn{
+	font-family: Soviet,Impact !important;
+    color: red !important;
+    background: #1a0000 !important;
+    border: none !important;
+    transition: .3s ease-in-out !important
+}
+
+.guild-settings-modal-members .member-buttons .btn:hover{
+	text-shadow: 0 0 2px red !important;
+    font-size: 110% !important;
+}
+
+.guild-header-open{
+    background: rgba(0,0,0,0.9);
+    color: white !important;
+}
+
+.guild-header header { box-shadow: none; }
 
 .guilds-wrapper .guilds .guild.audio .guild-inner:after{
 	background-image:url(https://a.pomf.cat/leuhsk.png);
@@ -679,7 +987,7 @@ div.popout popout-top-right no-arrow no-shadow{
     background-size: 50px 50px;
     background-position: 50%;
     background-repeat: no-repeat;
-    background-image: url(https://a.pomf.cat/hcbmfx.png) !important;
+    background-image: url(https://i.imgur.com/wvnYdPU.png) !important;
 
 }
 
@@ -695,29 +1003,29 @@ div.popout popout-top-right no-arrow no-shadow{
 }
 
 .guilds-wrapper{
-    background: linear-gradient(to bottom, #000000 , #600000) !important;
+    background-image:url(https://i.imgur.com/CFNcLbr.jpg) !important;
     box-shadow: inset -10px 0px 20px -10px black !important;
+    background-size: cover;
     min-width: 25px !important;
     width: 25px !important;
-    transition: .200s ease-in-out !important;
+    transition: 300ms ease-in-out !important;
 }
 
 .guilds-wrapper:hover{
     min-width:80px !important;
     width:80px !important;
-    transition: .1s ease !important;
-    background:linear-gradient(to bottom, #000000 , #e60000) !important;
+    transition: 300ms ease-in-out !important;
 }
 
 .guilds.unread 
 .guild-inner:before,
 .guild-channels 
 .channel-text.unread:not(.selected):not(.channel-muted):before {
-	background:#ff6600 !important;
+	background:red !important;
 }
-
-.guilds-wrapper .guilds .guild.selected:before,
-.guilds-wrapper .guilds .guild.unread:before{
+ 
+.guilds-wrapper .guilds .guild.unread:before,
+.guilds-wrapper .guilds .guild.selected:before{
     width: 55px !important;
     height: 55px !important;
     margin-top: -27.6px !important;
@@ -730,10 +1038,12 @@ div.popout popout-top-right no-arrow no-shadow{
 }
 
 .guild-header header{
-    font-family:soviet,Impact !important;
+    font-family: Soviet,Impact !important;
     font-size: 160% !important;
-    color:red!important;
-    transition: .2s ease
+    color: red !important;
+    transition: .2s ease-in-out;
+    background: transparent !important;
+    text-shadow: 0 0 2px black !important;
 }
 
 .guild-header:hover header{
@@ -746,26 +1056,24 @@ div.popout popout-top-right no-arrow no-shadow{
 }
 
 .guild-channels .channel-text.selected{
-	background: linear-gradient(to left, rgba(255,255,255,0) , black) !important;
-    box-shadow: inset 0 0 20px black;
-    transition: .2s ease !important
+	background: rgba(100,0,0,0.8) !important;
+    transition: .2s ease !important;
+    border-radius: 3px !important;
 }
 
 .guild-channels .channel-text:hover{
-	background: linear-gradient(to right, #0d0d0d, rgba(255,255,255,0)) !important;
-    box-shadow: inset 0 0 10px black ;
+	background:rgba(96,0,0,0.5) !important;
     transition: .2s ease;
 }
 
-.guild-channels .channel-voice-states li .icon-deafened::before,
-.guild-channels .channel-voice-states li .icon-muted::before {
-    content: " ";
-    width:10px;
-    height:10px;
-    background: radial-gradient(red, #600) ;
-    display:block;
-    border-radius:5px;
-    margin:8px;
+.guild-channels .channel-voice-states li .icon-deafened{
+	background-image:url(https://i.imgur.com/bm4XdPu.png) !important;
+    background-size: cover;
+}
+
+.guild-channels .channel-voice-states li .icon-muted{
+    background-image: url(https://i.imgur.com/Ux6H1x8.png) !important;
+    background-size: cover !important;
 }
 
 
@@ -773,9 +1081,31 @@ div.popout popout-top-right no-arrow no-shadow{
 
 /* H */
 
+.header-toolbar button.active{
+	opacity: 0.6 !important;
+    border-radius: 50px;
+}
+
+.header-toolbar .toolbar-badge{
+	border: none !important;
+    width: 32px !important;
+    height: 32px !important;
+    left: -1px !important;
+    top: -1px !important;
+    background:none;
+    animation: Pulse 3s ease-in-out infinite;
+    border-radius: 50px;
+    position: center;
+}
+
+.header-toolbar button:hover{
+	opacity: 0.6;
+}
+
 .header-toolbar button span{
 	background-color: orange;
-    border-radius: 5px
+    border-radius: 50px;
+    opacity: 1
 }
 
 .help-container,.links {display:none !important;}
@@ -783,8 +1113,9 @@ div.popout popout-top-right no-arrow no-shadow{
 
 
 
-
 /* I */
+
+.instant-invite-popout hr{border: none !important;}
 
 .invite-button-icon.expired{
     background: #931513;
@@ -799,17 +1130,17 @@ div.popout popout-top-right no-arrow no-shadow{
     background: rgba(0,0,0,0.4);
 }
 .icon.icon-file.webcode{
-	background-image:url(https://a.pomf.cat/squspg.png);
+	background-image:url(https://i.imgur.com/hftA4b0.png);
     background-size: cover;
 }
 
 .icon.icon-file.archive{
-	background-image: url(https://a.pomf.cat/zjcsxj.png);
+	background-image: url(https://i.imgur.com/oIILopF.png);
     background-size: cover;
 }
 
 .icon.icon-file.code{
-	background-image: url(https://a.pomf.cat/squspg.png);
+	background-image: url(https://i.imgur.com/p5N5FrH.png);
     background-size: cover;
 }
 
@@ -820,7 +1151,7 @@ div.popout popout-top-right no-arrow no-shadow{
 }
 
 .icon.icon-file{
-	background-image: url(https://a.pomf.cat/ximwgl.png);
+	background-image: url(https://i.imgur.com/oIILopF.png);
     background-size: cover;
 }
 
@@ -828,6 +1159,67 @@ div.popout popout-top-right no-arrow no-shadow{
 
 
 /* M */
+
+.message-group .sink-interactions{display: none !important;}
+
+.modal-content .form-inner p{color: red}
+
+.message-group .edit-message .channel-textarea-inner textarea{
+    font-family: Soviet !important;
+    color: white;
+}
+
+.message-group .edit-message .channel-textarea-inner{
+    background: rgba(0,0,0,0.5) !important;
+    border-radius: 10px;
+    font-family: Soviet !important;
+}
+
+.markdown-modal{
+    background: rgba(0,0,0,0.9) !important;
+    font-family: Soviet !important;
+}
+
+.markdown-modal .markdown-modal-header{border-bottom: none !important;}
+
+.message-group h2 .timestamp {
+    color: rgba(255,255,255,0.5) !important;
+	text-shadow: 0 0 2px black !important;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px !important;
+    padding: 3px;
+}
+
+.message-group h2 .timestamp:hover { color: white !important; }
+
+.messages-popout 
+.message-group 
+.action-buttons .jump-button {
+	background: #1a0000 !important;
+    font-family: Soviet, Impact !important;
+    color: red !important;
+}
+
+.messages-popout 
+.message-group a {
+    color:#EA4682 !important;
+    font-family: Courier !important;
+}
+
+.messages-popout 
+.message-group .comment .markup {
+    font-family: Soviet,Impact !important;
+}
+
+.message-group:hover .action-buttons {
+    box-shadow: 0 0 6px 0px rgba(0,0,0,0) !important;
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.markdown-modal .markdown-modal-footer{
+	background: transparent !important;
+    border: none !important;
+}
 
 .message-group .comment .markup{
 	box-shadow: 0 0 5px black;
@@ -855,8 +1247,10 @@ div.popout popout-top-right no-arrow no-shadow{
 }
 
 .messages {
-	background:linear-gradient(to top, #600000,#000000) !important;
     box-shadow:inset 10px 0px 20px -10px #000000 !important;
+    background-image: url(https://i.imgur.com/TUzuWN6.jpg) !important;
+    background-size: cover !important;
+    backgroubd-position: center !important;
 }
 
 .messages .mentioned .message-text {
@@ -871,10 +1265,10 @@ div.popout popout-top-right no-arrow no-shadow{
 /* N */
 
 .notification-settings-modal .notification-settings-modal-channel-settings-list{
-	background: #BF3F3F;
+	background:transparent;
 }
 .notification-settings-modal .settings-section{
-    background: #BF3F3F;
+    background:transparent;
 }
 
 .now-playing{
@@ -885,6 +1279,101 @@ div.popout popout-top-right no-arrow no-shadow{
 
 
 /* P & R & S */
+
+.server-icon{
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+
+.server-icon:hover{
+	border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    transition: .3s ease-in-out;
+}
+
+.settings .settings-inner{background: rgba(0,0,0,0.9);}
+
+#permissions .permission-actions {
+    font-family: Soviet, Impact;
+    color: white !important;
+}
+
+.private-channels {background: transparent !important;}
+
+
+#settings-roles .roles{border:none !important;}
+
+#settings-roles .roles li.selected:before{
+	background: #600 !important;
+    color: #600 !important;
+}
+
+#settings-roles .roles li:hover:before{
+	background: rgba(96,0,0,0.5) !important;
+    color: rgba(96,0,0,0.5) !important;
+}
+
+#settings-roles .roles li:hover{
+    background: rgba(255,255,255,0.1) !important;
+    cursor: pointer;
+}
+
+#settings-roles .roles li.selected{
+	background: rgba(255,255,255,0.1);
+    border-left:none !important; 
+}
+
+.settings .settings-inner .settings-panel-header {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.private-channels .channel .channel-name{
+	color: red !important;
+    opacity: 1;
+    text-shadow: 0 0 2px black;
+    background: rgba(0,0,0,0.7) !important;
+    border-radius: 5px;
+}
+
+.protip{font-family: Consolas !important;}
+
+.private-channels 
+.search-result.selected, 
+.private-channels .search-result:before { background: transparent; }
+
+.private-channels 
+.search-result.selected, 
+.private-channels .search-result:hover{
+	background: rgba(0,0,0,0.9) !important;
+    border-radius: 10px !important;
+}
+
+.search-bar { background: rgba(0,0,0,0.5) !important; }
+
+.popout header { background: rgba(0,0,0,0.9) !important; }
+
+.private-channel-call .btn-icon-settings:after{
+	background-image: url(https://i.imgur.com/PhCMXze.png) !important;
+    background-size: cover !important;
+    opacity: 1 !important;
+    border-radius : 5px !important;
+}
+
+.popout section{background-color: rgba(0,0,0,0.9) !important;}
+
+.search-bar input{
+    background: rgba(0,0,0,0.9);
+	color: white !important;
+}
+
+.slider-handle{
+	background: #600 !important;
+    border-radius: 10px !important;
+    border: none !important;
+}
 
 .private-channels 
 .channel.selected 
@@ -898,7 +1387,7 @@ div.popout popout-top-right no-arrow no-shadow{
     background-position: 50%;
     background-repeat: no-repeat;
 	background-color:#FFBF00 !important;
-    background-image:url(https://a.pomf.cat/oeazdd.png)
+    background-image:url(https://i.imgur.com/pjFsgMv.png)
 }
 
 .private-channels 
@@ -907,14 +1396,17 @@ div.popout popout-top-right no-arrow no-shadow{
 .private-channels 
 .channel:hover a {
 	box-shadow: inset 0 0 10px black;
-    background:linear-gradient(to right, #0d0d0d, rgba(255,255,255,0));
+    background:rgba(0,0,0,0.9);
 }
+
+.private-channels 
+.channel:before a{background: transparent !important} 
 
 .private-channels 
 .channel.selected a {
 	box-shadow: inset 0 0 20px black;
-    background:linear-gradient(to left, rgba(255,255,255,0) , black) !important;
-    border-left: none;
+    background:rgba(0,0,0,0.9) !important;
+    border-left: none !important;
 }
 
 .slider-bar-fill {
@@ -936,32 +1428,28 @@ div.popout popout-top-right no-arrow no-shadow{
 }
 
 .settings-header{
-    background: linear-gradient(to bottom, #000000 , #600000) !important;
-    box-shadow: inset 10px 0px 20px -10px black !important;
+    background: rgba(0,0,0,0.9) !important;
 }
 
 .settings
 .settings-inner
 .settings-panel{
-	background:linear-gradient(to bottom, #000000 , #600000) !important;
+	background-color:transparent !important;
 	color:#ff5050 !important;
     font-family:soviet,Impact !important;
-    box-shadow:inset 0px 0px 25px black !important;
     overflow-x:hidden !important;
 }
 
 .settings
 .settings-actions{
-	background-color:#600000 !important;
-	margin-top:-1px !important;
-    box-shadow: 0px 0px 25px !important;
+	background-color:rgba(0,0,0,0.9) !important;
+	border-top:none !important;
     border-radius: 0px 0px 10px 0px !important;
 }
 
 .settings-wrapper{
-    background:linear-gradient(to top, #600000 , #000000) !important;
+    background:transparent !important;
 	color:white !important;
-    box-shadow: inset 0 0 25px black !important;
 }
 
 .scroller-wrap .scroller::-webkit-scrollbar-thumb {
@@ -992,12 +1480,28 @@ div.popout popout-top-right no-arrow no-shadow{
 
 /* T */
 
-.theme-dark .channel-pins-wrap .channel-pins .message-group:hover{
-	brackground: rgba(0,0,0,0.2);
+.theme-dark .chat form .typing span{
+	position: center !important;
+}
+
+textarea{background: transparent;}
+
+.typing {
+	position: center !important;
+}
+
+.theme-dark .themed-popout .header,
+.private-channel-recipients-invite .error-state{
+	background-color: transparent !important;
+}
+
+.theme-dark .themed-popout{
+	background: transparent !important;
+    border: none !important;
 }
 
 .theme-dark .channel-pins-wrap .channel-pins .message-group{
-	background: rgba(0,0,0,0.5);
+	background: transparent;
     border: none;
     font-family: Soviet;
 }
@@ -1015,11 +1519,11 @@ div.popout popout-top-right no-arrow no-shadow{
     background-color: #1a0000;
 }
 .theme-dark .chat .jump-to-present-bar:hover {
-    background-color: #590000;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .theme-dark .channel-pins-wrap .header{
-    background: #600;
+    background: transparent;
 	box-shadow: none;
 }
 
@@ -1075,6 +1579,8 @@ div.popout popout-top-right no-arrow no-shadow{
 
 .typing{
     background:transparent !important;
+    text-align: center;
+    transition: .3s ease-in-out;
 }
 
 .topic {
@@ -1084,9 +1590,11 @@ div.popout popout-top-right no-arrow no-shadow{
 
 .title-wrap {
 	border-bottom:none !important;
-	background:#000000 !important;
+	background-image:url(https://i.imgur.com/CFNcLbr.jpg) !important;
     font-family:soviet,Impact !important ;
     text-shadow: 0 0 10px !important;
+    background-position: bottom !important;
+    background-size: cover !important;
 }
 
 .tooltip {
@@ -1115,6 +1623,20 @@ div.popout popout-top-right no-arrow no-shadow{
 
 /* U */
 
+.upload-modal 
+.inner .comment 
+.channel-textarea 
+.channel-textarea-inner textarea{
+	text-align: left !important;
+}
+
+.upload-modal 
+.inner .comment 
+.channel-textarea 
+.channel-textarea-inner{
+	border: 2px solid rgba(255,255,255,0.5) !important;
+    background: rgba(255,255,255,0.1) !important;
+}
 
 #user-profile-modal footer .btn.add-friend{background: #6AB772;}
 
@@ -1144,6 +1666,7 @@ div.popout popout-top-right no-arrow no-shadow{
 .user-popout .avatar-wrapper .avatar-popout{
 	border:none;
     background-color:none;
+    border-radius: 5px;
 }
 
 #user-profile-modal .btn{
@@ -1253,25 +1776,26 @@ div.popout popout-top-right no-arrow no-shadow{
     border-radius: 10px !important;
 }
 
-.upload-drop-modal .inner .instructions {
+.upload-drop-modal .inner .instructions{
     color: hsla(0, 0%, 100%, 0.6);
 }
 
 .upload-drop-modal .inner .icon.one {
-    background-image: url(https://a.pomf.cat/ximwgl.png);
+    background-image: url(https://i.imgur.com/hftA4b0.png);
     background-size: cover;
 }
 .upload-drop-modal .inner .icon.two {
-    background-image: url(https://a.pomf.cat/squspg.png);
+    background-image: url(https://i.imgur.com/p5N5FrH.png);
     background-size: cover;
 }
 .upload-drop-modal .inner .icon.three {
-    background-image: url(https://a.pomf.cat/baqhiw.png);
+    background-image: url(https://i.imgur.com/oIILopF.png);
     background-size: cover;
 }
 
 .upload-drop-modal .bgScale{
 	background: #600;
+    box-shadow: 0 0 10px black !important;
 } 
 
 .upload-drop-modal .inner {
@@ -1309,22 +1833,29 @@ div.popout popout-top-right no-arrow no-shadow{
 .upload-modal 
 .footer{
 	background: #600 !important;
+    box-shadow: 0 0 10px black !important;
 }
 
 .username{
-    font-family: Soviet;
+    font-family: Soviet, Impact;
+    text-shadow: 0 0 2px black;
 }
 
 
 
 /* V */
 
+#voice-connection{
+	background: transparent !important;
+    border: none;
+}
+
 #voice-connection .btn-group{
 	border: none !important;
 }
 
 #voice-connection .btn-info:after{
-	background-image: url(https://a.pomf.cat/tynweb.jpg);
+	background-image: url(https://i.imgur.com/oGzVdGc.jpg);
     background-size: cover;
     opacity: 0.9;
     border-radius: 4px;
@@ -1337,7 +1868,7 @@ div.popout popout-top-right no-arrow no-shadow{
 #voice-connection .btn-disconnect:hover:after{opacity:0.9}
 
 #voice-connection .btn-disconnect:after{
-	background-image: url(https://a.pomf.cat/eyzonl.jpg);
+	background-image: url(https://i.imgur.com/5wpdfbO.jpg);
     background-size: cover;
     opacity: 0.7;
     border-radius: 4px
@@ -1354,6 +1885,65 @@ div.popout popout-top-right no-arrow no-shadow{
 
 
 /* MIXED */
+
+.theme-dark .message-group .comment .markup strong{
+    color: red;
+    font-family:Soviet X !important; 
+}
+
+.user-popout .avatar-wrapper .avatar-hint { border-radius: 5px }
+
+.theme-dark 
+.messages-popout-wrap 
+.footer { background: transparent !important; }
+
+.theme-dark .messages-popout-wrap {
+    background: rgba(0,0,0,0.9) !important;
+    border: none !important;    
+}
+
+.theme-dark 
+.messages-popout-wrap 
+.header { background:transparent !important; }
+
+.theme-dark 
+.messages-popout-wrap 
+.messages-popout .message-group {
+	background: transparent !important;
+    border:none !important;
+}
+
+.theme-dark .private-channel-call .btn-icon-mute:after{
+	background-image: url(https://i.imgur.com/Z4lrClk.jpg) !important;
+    background-size: cover !important;
+    opacity: 1 !important;
+    border-radius: 5px !important;
+}
+
+.theme-dark .private-channel-call .btn-icon-mute.mute:after{
+    background-image:url(https://i.imgur.com/Gp1kAof.jpg) !important;
+    background-size: cover !important;
+    opacity: 1;
+    border-radius: 5px !important;
+}
+
+.theme-dark .chat .private-channel-call{
+	background-image: url(https://i.imgur.com/lrWsiv4.gifv) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.theme-dark .messages-wrapper 
+.messages .divider:not(.red) span { background: transparent !important; }
+
+.theme-dark 
+.friends-table .messages 
+.divider:not(.red) div, .theme-dark 
+.messages-wrapper .messages .divider:not(.red) div {
+    background: transparent !important;
+    color: transparent !important;
+}
 
 .theme-dark 
 .friends-table 
@@ -1417,9 +2007,10 @@ div.popout popout-top-right no-arrow no-shadow{
 .messages-wrapper 
 .messages 
 .divider:not(.red) span{
-	color: red !important;
-    background: transparent !important;
-    opacity:4 !important;
+	color: white !important;
+    opacity:1 !important;
+    border-radius: 10px;
+    text-shadow: 0 0 2px black;
 }
 
 .theme-dark 

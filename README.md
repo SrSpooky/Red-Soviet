@@ -22,4 +22,8 @@
 
 <var> I know, my screen is small, don't jugde .   _ . </var>
 
+<h2>General</h2>
 <img src=https://a.pomf.cat/fsheba.png>
+
+<h2>Config</h2>
+<img src=http://i.imgur.com/lFU09Xn.png>

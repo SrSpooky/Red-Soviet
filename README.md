@@ -11,7 +11,7 @@
 <ol>
   <li> Click in RAW
   <li> Do <Code> Ctrl + S </code>
-  <li> Save as <Code> .css </code>
+  <li> Save as <Code> .theme.css </code>
   <li> Go to <Code> ...\AppData\Roaming\betterdiscord\theme </code>
   <li> Be Happy 
   <li> ???

@@ -1,8 +1,16 @@
-//META{"name":"Red Soviet","description":"Another theme made only for Soviet &....Bears?","author":"Sir Spooky","version":"20.7"}*//
+//META{"name":"Red Soviet","description":"Another theme made only for Soviet &....Bears?","author":"Sir Spooky","version":"2.0"}*//
 
-/*ORDER ALPHABETIC*/
+/* fonts */
 
+@font-face{
+	font-family: Soviet;
+	src: url(https://github.com/SrSpooky/Red-Soviet/blob/master/Soviet2.woff?raw=true);
+}
 
+@font-face{
+	font-family: Soviet X;
+	src: url(https://a.pomf.cat/ybmyrz.TTF);
+}
 
 /* A */
 
@@ -17,7 +25,7 @@
 #autocomplete-popout section,
 #autocomplete-popout header{
     background: rgba(0,0,0,0.9) !important;
-    font-family: Soviet,Impact !important;
+    font-family: Soviet,Agency FB  !important;
     color: white !important;
     text-shadow: 0 0 2px black !important;
 }
@@ -109,7 +117,7 @@
 }
 
 .app{
-    font-family:Soviet !important;
+    font-family:Soviet, Agency FB !important;
     text-shadow: 0 0 10px !important;
     overflow-x: hidden !important;
     overflow: hidden !important;
@@ -197,7 +205,7 @@
 
 .btn-confirm.active .btn:last-of-type:not(:first-of-type){
 	background-color: rgba(0,0,0,0.7);
-    font-family: Soviet;
+    font-family: Soviet, Agency FB;
 }
 
 .btn-confirm.active .btn:last-of-type:hover:not(:first-of-type){
@@ -258,7 +266,7 @@
 }
 
 .bda-dark .server-info button{
-	font-family: Soviet,Impact;
+	font-family: Soviet,Agency FB ;
     border-radius: 5px;
     color: red;
     background-color: #1a0000
@@ -293,7 +301,7 @@ button.win-close{
 #bd-customcss-detach-container #bd-customcss-detach-controls-buttons button{
 	background-color: #1a0000;
     border-radius: 5px;
-    font-family: Soviet,Impact;
+    font-family: Soviet,Agency FB ;
     color: red;
 }
 
@@ -302,7 +310,7 @@ button.win-close{
 }
 
 #bd-show-channels{
-	font-family: Soviet;
+	font-family: Soviet, Agency FB;
     background:transparent ;
     top: 110px;
     left: 1px;
@@ -374,7 +382,7 @@ button.win-close{
 
 .change-log-button-container .change-log-button{
 	color: orange !important;
-    font-family: Soviet,Impact !important;
+    font-family: Soviet,Agency FB  !important;
     font-size: 110% !important;
 }
 
@@ -385,17 +393,17 @@ button.win-close{
 
 .change-log .changelog-in-progress:after {
 	content: " (Coming Soon)" !important;
-    font-family:Copperplate Gothic !important;
+    font-family:Agency FB !important;
 }
 
 .change-log .changelog-added, .change-log .changelog-added-secondary:after {
 	content: " (New Stuff)" !important;
-    font-family:Copperplate Gothic !important;
+    font-family:Agency FB !important;
 }
 
 .change-log .changelog-fixed:after {
 	content: " (Fixed)" !important;
-    font-family:Copperplate Gothic !important; 
+    font-family:Agency FB !important; 
 }
 
 .change-log .changelog-fixed,
@@ -505,7 +513,7 @@ button.win-close{
 	left: 530px !important;
     top: 700px;
     background: transparent;
-    font-family: Soviet;
+    font-family: Soviet, Agency FB;
     text-shadow: 0 0 10px;
     font-size: 30px;
     position: center; 
@@ -519,13 +527,13 @@ button.win-close{
 
 
 .channel-notification-settings .content label{
-	font-family:Soviet,Impact;
+	font-family:Soviet,Agency FB ;
     color: red;
 }
 
 
 .checkbox .checkbox-inner+span{
-	font-family:soviet,Impact;
+	font-family:soviet,Agency FB ;
     text-shadow: 0 0 3px black;
 }
 
@@ -556,7 +564,7 @@ button.win-close{
 .channel-members-wrap{
     min-width:70px !important;
     width:70px !important;
-    font-family:Soviet,Impact !important;
+    font-family:Soviet,Agency FB  !important;
     text-shadow:0 0 1px !important;
     transition:all 300ms ease !important;
     overflow-x:hidden !important;
@@ -743,18 +751,13 @@ div.popout popout-top-right no-arrow no-shadow{
 }
 
 .form .radio-group .radio{
-	font-family: Soviet,Impact !important;
+	font-family: Soviet,Agency FB  !important;
     color: white !important;
     text-shadow: 0 0 2px black !important;
 }
 
 .form .control-groups+.control-group, .form .control-groups+.control-groups{
 	margin-top:0px !important;
-}
-
-@font-face{
-	font-family: 'Soviet';
-    src: url(https://a.pomf.cat/tiickt.TTF);
 }
 
 .fav{
@@ -764,8 +767,7 @@ div.popout popout-top-right no-arrow no-shadow{
 }
 
 #friends,
-.friends-table
-.friends-table-body,
+.friends-table,
 .messages-wrapper {
     background-image:url(https://i.imgur.com/03MXtQp.jpg) !important;
     box-shadow:inset 10px 0px 20px -10px #000000 !important;
@@ -793,7 +795,7 @@ div.popout popout-top-right no-arrow no-shadow{
 
 .form .btn-primary {
 	background-color: #1a0000 !important;
-    font-family:soviet,Impact !important;
+    font-family:soviet,Agency FB  !important;
     color: red !important;
     transition: .1s ease !important;
 }
@@ -913,13 +915,13 @@ div.popout popout-top-right no-arrow no-shadow{
 .guild-settings-modal-members 
 .guild-settings-modal-list 
 .member .member-username{
-    font-family: Soviet;
+    font-family: Soviet, Agency FB;
     opacity: 1;
     font-size: 20px;
     color: white;
 }
 
-guild-settings-modal-members .member-buttons .btn.btn-danger{
+.guild-settings-modal-members .member-buttons .btn.btn-danger{
 	background: rgba(255,0,0,0.8) !important;
     color: #600 !important
 }
@@ -929,7 +931,7 @@ guild-settings-modal-members .member-buttons .btn.btn-danger{
 }
 
 .guild-settings-modal-members .member-buttons .btn{
-	font-family: Soviet,Impact !important;
+	font-family: Soviet,Agency FB  !important;
     color: red !important;
     background: #1a0000 !important;
     border: none !important;
@@ -975,7 +977,7 @@ guild-settings-modal-members .member-buttons .btn.btn-danger{
 .guilds-wrapper .guilds .friends-online{
     color: white;
     font-size: 15px;
-    font-family: ;
+    font-family:Soviet, Agency FB ;
     background: orange !important;
     border-radius: 4px;
 }
@@ -1049,7 +1051,7 @@ guild-settings-modal-members .member-buttons .btn.btn-danger{
 }
 
 .guild-header header{
-    font-family: Soviet,Impact !important;
+    font-family: Soviet,Agency FB  !important;
     font-size: 160% !important;
     color: red !important;
     transition: .2s ease-in-out;
@@ -1196,12 +1198,12 @@ guild-settings-modal-members .member-buttons .btn.btn-danger{
 .message-group .edit-message .channel-textarea-inner{
     background: rgba(0,0,0,0.5) !important;
     border-radius: 10px;
-    font-family: Soviet !important;
+    font-family: Soviet, Agency FB !important;
 }
 
 .markdown-modal{
     background: rgba(0,0,0,0.9) !important;
-    font-family: Soviet !important;
+    font-family: Soviet, Agency FB !important;
 }
 
 .markdown-modal .markdown-modal-header{border-bottom: none !important;}
@@ -1220,7 +1222,7 @@ guild-settings-modal-members .member-buttons .btn.btn-danger{
 .message-group 
 .action-buttons .jump-button {
 	background: #1a0000 !important;
-    font-family: Soviet, Impact !important;
+    font-family: Soviet, Agency FB  !important;
     color: red !important;
 }
 
@@ -1232,7 +1234,7 @@ guild-settings-modal-members .member-buttons .btn.btn-danger{
 
 .messages-popout 
 .message-group .comment .markup {
-    font-family: Soviet,Impact !important;
+    font-family: Soviet,Agency FB  !important;
 }
 
 .message-group:hover .action-buttons {
@@ -1275,6 +1277,7 @@ guild-settings-modal-members .member-buttons .btn.btn-danger{
     background-image: url(https://i.imgur.com/TUzuWN6.jpg) !important;
     background-size: cover !important;
     backgroubd-position: center !important;
+	font-family: Soviet, Agency FB;
 }
 
 .messages .mentioned .message-text {
@@ -1332,14 +1335,14 @@ guild-settings-modal-members .member-buttons .btn.btn-danger{
     transition: .3s ease-in-out;
 }
 
-.settings .settings-inner{background: rgba(0,0,0,0.9);}
+.settings .settings-inner { background: rgba(0,0,0,0.9); !important }
 
 #permissions .permission-actions {
-    font-family: Soviet, Impact;
+    font-family: Soviet, Agency FB !important;
     color: white !important;
 }
 
-.private-channels {background: transparent !important;}
+.private-channels { background: transparent !important;}
 
 
 #settings-roles .roles{border:none !important;}
@@ -1473,15 +1476,15 @@ guild-settings-modal-members .member-buttons .btn.btn-danger{
 .settings
 .settings-inner
 .settings-panel{
-	background-color:transparent !important;
-	color:#ff5050 !important;
-    font-family:soviet,Impact !important;
-    overflow-x:hidden !important;
+	background-color: transparent !important;
+	color: #ff5050 !important;
+    font-family: Soviet,Agency FB  !important;
+    overflow-x: hidden !important;
 }
 
 .settings
 .settings-actions{
-	background-color:rgba(0,0,0,0.9) !important;
+	background-color: rgba(0,0,0,0.9) !important;
 	border-top:none !important;
     border-radius: 0px 0px 10px 0px !important;
 }
@@ -1506,7 +1509,7 @@ guild-settings-modal-members .member-buttons .btn.btn-danger{
 .small-popout-box {background: #600000}
 .small-popout-box .btn-item {
     color :white !important;
-    font-family:Soviet, Impact !important;
+    font-family:Soviet, Agency FB  !important;
     transition: .2s ease !important;
 }
 
@@ -1546,7 +1549,7 @@ textarea{background: transparent;}
 .theme-dark .channel-pins-wrap .channel-pins .message-group{
 	background: transparent;
     border: none;
-    font-family: Soviet;
+    font-family: Soviet, Agency FB;
 }
 
 .theme-dark .channel-pins-wrap .footer{
@@ -1578,7 +1581,7 @@ textarea{background: transparent;}
 }
 
 .theme-dark .message-group .comment .markup .highlight{
-	font-family: Copperplate Gothic;
+	font-family: Agency FB;
     color: orange;
     background: transparent;
 }
@@ -1609,7 +1612,7 @@ textarea{background: transparent;}
 }
 
 .tab-bar-item{
-	font-family:Soviet,Impact !important;
+	font-family:Soviet,Agency FB  !important;
     font-size:120% !important;
     color:red !important;
     transition: .1s ease !important;
@@ -1634,7 +1637,7 @@ textarea{background: transparent;}
 .title-wrap {
 	border-bottom:none !important;
 	background-image:url(https://i.imgur.com/CFNcLbr.jpg) !important;
-    font-family:soviet,Impact !important ;
+    font-family: Soviet,Agency FB  !important ;
     text-shadow: 0 0 10px !important;
     background-position: bottom !important;
     background-size: cover !important;
@@ -1669,7 +1672,7 @@ textarea{background: transparent;}
 .user-settings-security .btn-ghost{
 	background: #1a0000 !important;
     border: none !important;
-    font-family: Soviet, Copperplate Ghotic !important;
+    font-family: Soviet, Agency FB !important;
     color: red !important;
 }
 
@@ -1722,7 +1725,7 @@ textarea{background: transparent;}
 #user-profile-modal .btn{
 	background: #1a0000;
     color: red;
-    font-family: Soviet;
+    font-family: Soviet, Agency FB;
     transition: .2s ease;
 }
 
@@ -1795,7 +1798,7 @@ textarea{background: transparent;}
 }
 
 .user-name{
-	font-family:soviet,Impact !important;
+	font-family:soviet,Agency FB  !important;
     font-size:240% !important;
     background-color:transparent !important;
     text-shadow:0 0 9px black !important;
@@ -1856,7 +1859,7 @@ textarea{background: transparent;}
 .footer 
 .button{
     background:#1a0000 !important;
-	font-family: 'Soviet',Impact !important;
+	font-family: 'Soviet',Agency FB  !important;
     color: red !important;
     text-shadow: 0 0 10px;
 }
@@ -1887,7 +1890,7 @@ textarea{background: transparent;}
 }
 
 .username{
-    font-family: Soviet, Impact;
+    font-family: Soviet, Agency FB ;
     text-shadow: 0 0 2px black;
 }
 
@@ -1940,7 +1943,7 @@ textarea{background: transparent;}
 /* W */
 
 ::-webkit-input-placeholder{
-    font-family: Soviet,Impact !important;
+    font-family: Soviet,Agency FB  !important;
 }
 
 
@@ -2037,7 +2040,7 @@ textarea{background: transparent;}
     background: #1a0000;
     box-shadow:0 0 0px;
     color: red;
-    font-family: Soviet
+    font-family: Soviet, Agency FB
 }
 
 .theme-dark 

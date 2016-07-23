@@ -1,4 +1,4 @@
-//META{"name":"Red Soviet","description":"Another theme made only for Soviet &....Bears?","author":"Sir Spooky","version":"20.0"}*//
+//META{"name":"Red Soviet","description":"Another theme made only for Soviet &....Bears?","author":"Sir Spooky","version":"20.7"}*//
 
 /*ORDER ALPHABETIC*/
 
@@ -73,14 +73,23 @@
     background-size: cover;
 }
 
-.account .btn:after{border-radius:4px;}
+.account .btn:after{
+    border-radius:40px;
+}
 
 .account .btn:hover{opacity: 0.8}
 
 .account .btn-settings:after{
-	background-image: url(https://i.imgur.com/PhCMXze.png);
+	background-image: url(https://i.imgur.com/YGQTCv7.png);
     background-size:cover;
     opacity: 1;
+    background-color: rgba(0,0,0,0.9) !important;
+}
+
+.account .btn{
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !Important;
 }
 
 .account .btn-deafen.disabled:hover:after,
@@ -303,6 +312,8 @@ button.win-close{
     height: 30px;
     border-radius: 5px;
 }
+
+.btn-help:hover{background: #600 !important;}
 
 
 
@@ -1135,7 +1146,7 @@ guild-settings-modal-members .member-buttons .btn.btn-danger{
 }
 
 .icon.icon-file.archive{
-	background-image: url(https://i.imgur.com/oIILopF.png);
+	background-image: url(https://i.imgur.com/xiSXiSi.png);
     background-size: cover;
 }
 
@@ -1159,6 +1170,19 @@ guild-settings-modal-members .member-buttons .btn.btn-danger{
 
 
 /* M */
+
+.message-group .comment .markup code.inline:after{
+	content: " <" !important;
+}
+
+.message-group .comment .markup code.inline:before{
+	content: "> " !important;
+}
+
+.message-group .comment .markup code.inline{
+    background: black !important;
+    color: green !important;
+}
 
 .message-group .sink-interactions{display: none !important;}
 
@@ -1279,6 +1303,21 @@ guild-settings-modal-members .member-buttons .btn.btn-danger{
 
 
 /* P & R & S */
+
+.radio .radio-inner{
+	background: rgba(96,0,0,0.5) !important;
+    border: none !important;
+    border-radius: 5px !important;
+}
+
+.radio-inner input[type=radio]:checked+span:after{
+	border-radius: 3px !important;
+}
+
+.radio:hover span:after{
+	background: red !Important;
+    border-radius: 3px !important;
+}
 
 .server-icon{
     border-radius: 50px;
@@ -1480,6 +1519,10 @@ guild-settings-modal-members .member-buttons .btn.btn-danger{
 
 /* T */
 
+.theme-dark .message-group .comment .markup pre{
+    border:2px solid #600 !important;
+}
+
 .theme-dark .chat form .typing span{
 	position: center !important;
 }
@@ -1622,6 +1665,13 @@ textarea{background: transparent;}
 
 
 /* U */
+
+.user-settings-security .btn-ghost{
+	background: #1a0000 !important;
+    border: none !important;
+    font-family: Soviet, Copperplate Ghotic !important;
+    color: red !important;
+}
 
 .upload-modal 
 .inner .comment 
@@ -1850,28 +1900,39 @@ textarea{background: transparent;}
     border: none;
 }
 
+#voice-connection .btn{
+	background: transparent !important;
+    box-shadow: none !Important;
+}
+
 #voice-connection .btn-group{
 	border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
 }
 
 #voice-connection .btn-info:after{
-	background-image: url(https://i.imgur.com/oGzVdGc.jpg);
+	background-image: url(https://i.imgur.com/6fzHL3S.png);
     background-size: cover;
-    opacity: 0.9;
+    opacity: 1;
     border-radius: 4px;
+    background-color: rgba(0,0,0,0.9) !important;
+    box-shadow: none !important;
 }
 
 #voice-connection .btn-info:hover:after{
-	opacity: 1;
+	opacity: 0.9;
 }
 
 #voice-connection .btn-disconnect:hover:after{opacity:0.9}
 
 #voice-connection .btn-disconnect:after{
-	background-image: url(https://i.imgur.com/5wpdfbO.jpg);
+	background-image: url(https://i.imgur.com/d0NdkBV.png);
     background-size: cover;
-    opacity: 0.7;
-    border-radius: 4px
+    opacity: 1;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.9) !important;
+    box-shadow: none !important
 }
 
 
